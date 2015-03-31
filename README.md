@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=Y-kXtWdjtmw
 https://www.youtube.com/watch?v=SoDv0qhyysQ&list=PL1D4EAB31D3EBC449
 
 # Installing LaTeX
-Download and install MiKTeX
+Download and install MiKTeX (Make sure to install this first since TeXstudio is then able to find and connect automatically for you).
 Link (Windows): http://miktex.org/download
 
 Download and install TeXstudio
