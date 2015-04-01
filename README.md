@@ -1,5 +1,5 @@
 # git-ui-thesis
-A candidate thesis on the UIs of git.
+A Bachelor of Computer Science thesis about the UIs of git.
 
 # Getting to know LaTeX
 Look at some of these videos:
