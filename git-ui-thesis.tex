@@ -1,9 +1,11 @@
 % git-ui-thesis.tex
 % Created: 3/4 2015
 
-\documentclass[12pt,journal,compsoc]{IEEEtran}
+\documentclass[12pt,a4paper,article,compsoc]{IEEEtran}
 \hyphenation{op-tical net-works semi-conduc-tor}
 \usepackage{paralist}
+\usepackage{cite}
+
 \begin{document}
 	% Settings of author and title
 	\title{This title is not determined yet}
@@ -31,7 +33,6 @@
 		
 		% Research methodology
 		\section{Research methodology}
-		
 			\subsection{Research questions}
 			\begin{itemize}
 				\item What is most commonly used when getting started with git, CLI or GUI?
@@ -52,149 +53,149 @@
 			\subsection{Empirical study design}
 			
 				\subsubsection{Survey}
-					\paragraph{Goal with the survey}
-					The survey consists of 13 multiple choice questions, the questions are aimed to be as easy and quick to answer as possible to persuade people to answer the survey. What the survey is aimed at finding out is the following; the level of experience the subject has with git, what UI they are currently using, what they have used in the past and if there is a specific reason for why they use the interface that they use. We also want to find out how the subject learned to use git, what they primarily use Git for, what operating system they are working on and how much time they spend on average interacting with Git as part of their development work. Finally we want to get some insight as to how often they need to consult another person or resources online or in handbooks to solve issues that arise in Git, accompanied with some word association with the two different UI:s to get a statistical view of how the users perceive them.
+				\subsubsection*{Goal with the survey}
+				The survey consists of 13 multiple choice questions, the questions are aimed to be as easy and quick to answer as possible to persuade people to answer the survey. What the survey is aimed at finding out is the following; the level of experience the subject has with git, what UI they are currently using, what they have used in the past and if there is a specific reason for why they use the interface that they use. We also want to find out how the subject learned to use git, what they primarily use Git for, what operating system they are working on and how much time they spend on average interacting with Git as part of their development work. Finally we want to get some insight as to how often they need to consult another person or resources online or in handbooks to solve issues that arise in Git, accompanied with some word association with the two different UI:s to get a statistical view of how the users perceive them.
 					
-					\paragraph{Questions and alternatives}
-					\begin{enumerate}
-						\item How old are you?\\
-						\begin{inparaenum}[\itshape a\upshape)]
-							\item \textless 18
-							\item 19-25
-							\item 25-30
-							\item 30-35
-							\item 35-40
-							\item 40-45
-							\item 45-49
-							\item \textgreater 50
-						\end{inparaenum}
-						\item How long have you been working with git?\\
-						\begin{inparaenum}[\itshape a\upshape)]
-							\item \textless 6 months
-							\item 6 months -1 year
-							\item 1-3 years
-							\item 3-5 years
-							\item 5-10 years
-						\end{inparaenum}
-						\item How would you rate your knowledge of git?\\
-						\begin{inparaenum}[\itshape a\upshape)]
-							\item Novice
-							\item Amateur
-							\item Average
-							\item Pro
-							\item Master
-						\end{inparaenum}
-						\item What type of UI are you primarily using for git?\\
-						\begin{inparaenum}[\itshape a\upshape)]
-							\item Mainly CLI
-							\item Mainly GUI
-							\item Both equally
-						\end{inparaenum}
-						\item How did you learn to use git?\\
-						\begin{inparaenum}[\itshape a\upshape)]
-							\item Colleague or friend
-							\item Open source community
-							\item Online tutorials
-							\item Book
-							\item Course
-							\item Self taught
-						\end{inparaenum}
-						\item What interface did you use when starting out with git?\\
-						\begin{inparaenum}[\itshape a\upshape)]
-							\item CLI
-							\item GUI
-						\end{inparaenum}
-						\item Why do you use the interface you use today?\\
-						\begin{inparaenum}[\itshape a\upshape)]
-							\item Personal preference
-							\item Standards for work environment
-							\item Outside influences
-							\item It is what i know best
-						\end{inparaenum}
-						\item What platform do you primarily use?\\
-						\begin{inparaenum}[\itshape a\upshape)]
-							\item Windows
-							\item Mac
-							\item Linux
-						\end{inparaenum}
-						\item What do you mainly use git for?\\
-						\begin{inparaenum}[\itshape a\upshape)]
-							\item Basic change tracking
-							\item Collaborative work
-							\item Large scale version control with branch management and code reviewing in git
-						\end{inparaenum}
-						\item How large a portion of every working hour is spent on interfacing with git?\\
-						\begin{inparaenum}[\itshape a\upshape)]
-							\item \textless 5min
-							\item 5-8 min
-							\item 8-12 min
-							\item 12-16 min
-							\item 16-20 min
-							\item 20-30 min
-							\item \textgreater 30 min
-						\end{inparaenum}
-						\item How many times in a given week do you need to seek help for an issue with git?\\
-						\begin{inparaenum}[\itshape a\upshape)]
-							\item 0
-							\item 1-2
-							\item 2-4
-							\item 4-6
-							\item 6-10
-							\item 10-15
-							\item 15-20
-							\item \textgreater 20
-						\end{inparaenum}
-						\item What words do you associated with Git GUI?\\
-						\begin{inparaenum}[\itshape a\upshape)]
-							\item Aesthetic
-							\item Easy
-							\item Bulgy
-							\item Auto-magic
-							\item Difficult
-							\item Helpful
-							\item Simple
-							\item Intuitive
-							\item Insightful
-							\item Hard
-							\item Time consuming
-							\item Cool
-							\item Professional looking
-							\item Control
-							\item Difficult
-							\item Ugly
-							\item Old fashioned
-						\end{inparaenum}
-						\item What words do you associated with Git CLI?\\
-						\begin{inparaenum}[\itshape a\upshape)]
-							\item Aesthetic
-							\item Easy
-							\item Bulgy
-							\item Auto-magic
-							\item Difficult
-							\item Helpful
-							\item Simple
-							\item Intuitive
-							\item Insightful
-							\item Hard
-							\item Time consuming
-							\item Cool
-							\item Professional looking
-							\item Control
-							\item Difficult
-							\item Ugly
-							\item Old fashioned
-						\end{inparaenum}
-					\end{enumerate}
-					
-					\paragraph{Crafting and distribution}
-					The survey will be made as a web form that we can easily collect the data from and most of all distribute easily. Distribution of the survey is done through a number of different channels online such as BTH:s student mail list, through contacts at different Swedish companies, trough large companies that work with git that we have been able to procure assistance with and finally 3-7 [EXACT NUMBER LATER] different sub-reddits (Forum boards at the popular web forum Reddit) associated with software development.
+				\subsubsection*{Questions and alternatives}
+				\begin{enumerate}
+					\item How old are you?\\
+					\begin{inparaenum}[\itshape a\upshape)]
+						\item \textless 18
+						\item 19-25
+						\item 25-30
+						\item 30-35
+						\item 35-40
+						\item 40-45
+						\item 45-49
+						\item \textgreater 50
+					\end{inparaenum}
+					\item How long have you been working with git?\\
+					\begin{inparaenum}[\itshape a\upshape)]
+						\item \textless 6 months
+						\item 6 months -1 year
+						\item 1-3 years
+						\item 3-5 years
+						\item 5-10 years
+					\end{inparaenum}
+					\item How would you rate your knowledge of git?\\
+					\begin{inparaenum}[\itshape a\upshape)]
+						\item Novice
+						\item Amateur
+						\item Average
+						\item Pro
+						\item Master
+					\end{inparaenum}
+					\item What type of UI are you primarily using for git?\\
+					\begin{inparaenum}[\itshape a\upshape)]
+						\item Mainly CLI
+						\item Mainly GUI
+						\item Both equally
+					\end{inparaenum}
+					\item How did you learn to use git?\\
+					\begin{inparaenum}[\itshape a\upshape)]
+						\item Colleague or friend
+						\item Open source community
+						\item Online tutorials
+						\item Book
+						\item Course
+						\item Self taught
+					\end{inparaenum}
+					\item What interface did you use when starting out with git?\\
+					\begin{inparaenum}[\itshape a\upshape)]
+						\item CLI
+						\item GUI
+					\end{inparaenum}
+					\item Why do you use the interface you use today?\\
+					\begin{inparaenum}[\itshape a\upshape)]
+						\item Personal preference
+						\item Standards for work environment
+						\item Outside influences
+						\item It is what i know best
+					\end{inparaenum}
+					\item What platform do you primarily use?\\
+					\begin{inparaenum}[\itshape a\upshape)]
+						\item Windows
+						\item Mac
+						\item Linux
+					\end{inparaenum}
+					\item What do you mainly use git for?\\
+					\begin{inparaenum}[\itshape a\upshape)]
+						\item Basic change tracking
+						\item Collaborative work
+						\item Large scale version control with branch management and code reviewing in git
+					\end{inparaenum}
+					\item How large a portion of every working hour is spent on interfacing with git?\\
+					\begin{inparaenum}[\itshape a\upshape)]
+						\item \textless 5min
+						\item 5-8 min
+						\item 8-12 min
+						\item 12-16 min
+						\item 16-20 min
+						\item 20-30 min
+						\item \textgreater 30 min
+					\end{inparaenum}
+					\item How many times in a given week do you need to seek help for an issue with git?\\
+					\begin{inparaenum}[\itshape a\upshape)]
+						\item 0
+						\item 1-2
+						\item 2-4
+						\item 4-6
+						\item 6-10
+						\item 10-15
+						\item 15-20
+						\item \textgreater 20
+					\end{inparaenum}
+					\item What words do you associated with Git GUI?\\
+					\begin{inparaenum}[\itshape a\upshape)]
+						\item Aesthetic
+						\item Easy
+						\item Bulgy
+						\item Auto-magic
+						\item Difficult
+						\item Helpful
+						\item Simple
+						\item Intuitive
+						\item Insightful
+						\item Hard
+						\item Time consuming
+						\item Cool
+						\item Professional looking
+						\item Control
+						\item Difficult
+						\item Ugly
+						\item Old fashioned
+					\end{inparaenum}
+					\item What words do you associated with Git CLI?\\
+					\begin{inparaenum}[\itshape a\upshape)]
+						\item Aesthetic
+						\item Easy
+						\item Bulgy
+						\item Auto-magic
+						\item Difficult
+						\item Helpful
+						\item Simple
+						\item Intuitive
+						\item Insightful
+						\item Hard
+						\item Time consuming
+						\item Cool
+						\item Professional looking
+						\item Control
+						\item Difficult
+						\item Ugly
+						\item Old fashioned
+					\end{inparaenum}
+				\end{enumerate}
+				
+				\subsubsection*{Crafting and distribution}
+				The survey will be made as a web form that we can easily collect the data from and most of all distribute easily. Distribution of the survey is done through a number of different channels online such as BTH:s student mail list, through contacts at different Swedish companies, trough large companies that work with git that we have been able to procure assistance with and finally 3-7 [EXACT NUMBER LATER] different sub-reddits (Forum boards at the popular web forum Reddit) associated with software development.
 				
 				\subsubsection{Interviews}
-					\paragraph{Interview format}
-					The format of the interviews will be a discussion on the topic of this paper where the aim is to get the subjects to explain their standing on the issue of CLI v. GUI in git interaction, and most of all elaborate around perceptions and experiences that they have. We will also supply some information about the UI:s to allow the sessions to go into as much detail as possible. 
-					We will conduct 4-7 [NUMBER TO BE DETERMINED LATER] interviews with a number of students new to git and a number of professionals using it every day, the sessions will be recorded and transcribed later to minimize the loss of information.
+				\subsubsection*{Interview format}
+				The format of the interviews will be a discussion on the topic of this paper where the aim is to get the subjects to explain their standing on the issue of CLI v. GUI in git interaction, and most of all elaborate around perceptions and experiences that they have. We will also supply some information about the UI:s to allow the sessions to go into as much detail as possible. 
+				We will conduct 4-7 [NUMBER TO BE DETERMINED LATER] interviews with a number of students new to git and a number of professionals using it every day, the sessions will be recorded and transcribed later to minimize the loss of information.
 					
-					\paragraph{Questions and topics to discuss}
+				\subsubsection*{Questions and topics to discuss}
 		
 		% Literature study		
 		\section{Literature review}
