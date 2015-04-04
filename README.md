@@ -13,3 +13,5 @@ Link (Windows): http://miktex.org/download
 Download and install TeXstudio
 Link (Cross platform): http://texstudio.sourceforge.net/
 
+# Other tools used for this thesis
+Harvard reference generator: http://www.neilstoolbox.com/bibliography-creator/
