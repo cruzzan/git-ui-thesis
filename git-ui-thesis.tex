@@ -26,10 +26,17 @@
 		
 		% Content
 		\section{Introduction}
-		TODO Skriva grejer
+		Git is one of the most widely used version control system and the discussions between using CLI or GUIs' have been going on for quite some time.
+		To date people seem to prefer the CLI over GUI when working with Git, however it is not clear as of why.
+		Theories do exist that states that the CLI provides a faster and more controlled way of dealing with Git. \cite{GitUserSurvey}\cite{GitInClassroom}
+		In this paper we investigare why people use the CLI, the GUI or both to interact with Git, if experience matters in the choice between the two and if either of them is easier for novice users.
+		To answer these questions we have conducted a survey and interviews.
 		
 		% Background
 		\section{Background}
+			\subsection{Git}
+			\subsection{Interfacing with Git}
+			
 		
 		% Research methodology
 		\section{Research methodology}
@@ -212,6 +219,10 @@
 			However theoretically, as users get more and more experienced they will gradually start to prefer the command-line interface over a graphical user interface because they are able to complete their tasks faster and to maintain more control over what they are doing and what's going on.\\\\
 			Now, lets forget about the theories and focus on what these studies yielded in the form of results. Generally speaking it would seem that a user tends to use what they find to be easier \cite{Treweek}. Because graphical user interfaces do have a more lenient learning curve it would therefore appear logical that a user would prefer that over a command-line interface. In terms of Git, graphical user interfaces are likely more valuable when the knowledge of the system matures for the user \cite{GitInClassroom}. Git is complex, if you check the answers for the question “What do you hate about Git?” in the 2012 edition of GitSurvey you will notice that this is one of the answers. Another answer to this question is ”requires steep learning curve for newbies”. This is what spurred the development of graphical user interfaces for Git, the goal was to hide some of Git:s complexity. \cite{WrongWithGit}
 			
+			According to Eric S. Raymond, the disadvantage of the commandline interface is that it almost always has high mnemonic load (low ease), and usually has low transparency. Most people (especially non-technical end users) find such interfaces relatively cryptic and difficult to learn. \cite{ArtOfUnixProgramming}
+			Juergen Haas believes that the CLI is generally easier to use if you can remember the commands and options, which you probably would if you use them a lot. \cite{LinuxGuiVsCli}
+			
+			
 			\subsection{Summary of the literature study results}
 			The graphical user interfaces that are available for Git is a lot less used than the Git command-line. Yet people with low experience seem to prefer the graphical user interfaces because they appear to be easier to use. The people that answered the GitSurvey in 2012 was a group of mostly everyday users or more experienced than average users of Git \cite{GitUserSurvey}, so it is hard to judge whether the statement in the line above is valid or not but if you are to believe the previously introduced studies then it would make sense. After looking at the previous studies, we would have to say that command-line interfaces seem to be something that attracts more experienced users whilst graphical user interfaces attracts novice users.
 		
@@ -250,6 +261,14 @@
 			
 			\bibitem{WrongWithGit}
 			Perez De Rosso, S. \& Jackson, D. (2013). What's wrong with git?: a conceptual design analysis. Presented at 2013 ACM international symposium on New ideas, new paradigms, and reflections on programming \& software. Retrieved 4th April, 2015, at ACM Digital Library. DOI: 10.1145/2509578.2509584.
+			
+			\bibitem{ArtOfUnixProgramming}
+			Eric S. Raymond. (2005). The Art of Unix Programming.
+			Available: http://www.catb.org/esr/writings/taoup/html/ch11s04.html.
+			Last accessed 6th April 2015.
+			
+			\bibitem{LinuxGuiVsCli}
+			Juergen Haas. Linux: GUI vs. Command line. Available: http://linux.about.com/cs/softofficeutility/a/gui\_cli.htm. Last accessed 6th April 2015.
 			
 		\end{thebibliography}
 \end{document}
