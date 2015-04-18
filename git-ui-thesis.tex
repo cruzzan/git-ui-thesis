@@ -39,20 +39,29 @@
 		% Background
 		\section{Background}
 			\subsection{Git}
-			To date, Github alone has over 21.7 million repositories.\cite{GithubAbout} All of these repositories are, as might be obvious, Git repositories. Basically, thousands of developers use Git to version control their code.\cite{GitUserSurvey}
-			By default Git comes with a command-line interface, but there are organizations whom has developed graphical user interfaces to interact with Git.
-			Git is free, open source and designed to handle from small to very large projects.
-			% Lite mer text här kanske 
-			According to the creators, of Git, Git outclasses SCM tools such as Subversion, CVS, Perforce and Clearcase, with features like cheap local branching, convenient staging areas and multiple workflows.\cite{GitHomepage}
+			In 2005 the Linux development community started the development of Git.
+			Up until that point they had been using BitKeeper as their version control system. By that time BitKeeper was free but when the company behind the product decided to price it the Linux development community quickly abandoned the solution to develop their own open-source version control system.\cite{ProGit}
+			To date, Github alone has over 21.7 million repositories.\cite{GithubAbout} All of these repositories are, as might be obvious, Git repositories. 
+			Git is, today, one of the most common version control systems \cite{EclipseDeveoperReport}\cite{DeveloperProductivity}\cite{MicrosoftSurveyResults}.
 			
 			\subsection{Command-line interface and the Graphical user interface}
-			There are two main ways of interfacing with Git, one is through a command-line interface and the other is through a graphical user interface.
-			Though the graphical user interface is usually, if not always, a wrapper that interacts with a command-line interface.\\
+			There are two main ways of interfacing with Git, one is through a command-line interface and the other is through a graphical user interface.\\
 			When using the command-line interface you type commands manually to make stuff happen whilst in the graphical user interface you will have something visual to interact with, such as buttons, inputfields etc.
 			There's pros and cons with using either of the two interfaces.
 			For example, through a command-line you can perform some actions, like renaming 100 files with a lot less effort than with a graphical user interface but it would require you to know the commands needed to rename the files. One command can perform a lot of different tasks, whilst in a graphical user interface you would normally have to rename each file one by one which would require a lot more time but less knowledge.
 			
+			\subsection{Technical terms}
+			Below there is an explanation to common terms that will be used throughout this paper.
 			
+			\subsubsection{CLI}
+			CLI means command-line interface, which is a way to interact with a computer and perform certain tasks by typing commands on a line.
+			
+			\subsubsection{GUI}
+			GUI means graphical user interface. A graphical user interface is a program interface that takes advantage of the computer's graphics capabilities to make a the program easier to use \cite{WhatIsGui}.
+			
+			\subsubsection{VCS (Version Control System)}
+			A VCS usually consists of two applications, one on a server-side and one on a client-side.
+			It's basic functionality is to maintain source code, other types of software files and their history.\cite{FoundationVCforWebDevs}
 			
 		% Research methodology
 		\section{Research methodology}
@@ -300,8 +309,23 @@
 			\bibitem{GithubAbout}
 			Github.com - Features. (2015). Available: https://github.com/features/. Last accessed 16th April 2015.
 			
-			\bibitem{GitHomepage}
-			Git website. (2015). Available: http://git-scm.com/. Last accessed 16th April 2015.
+			\bibitem{ProGit}
+			S. Chacon, Pro Git, New York, NY: Apress, 2009.
+			
+			\bibitem{EclipseDeveoperReport}
+			The Eclipse Foundation. "Eclipse Open Source Developer Report". The Eclipse Foundation. San Francisco, CA. 2012.
+			
+			\bibitem{DeveloperProductivity}
+			ZeroTurnaround. "Developer Productivity Report 2012: Java Tools, Tech, Devs \& Data". ZeroTurnaround. Boston, MA. 2012.
+			
+			\bibitem{MicrosoftSurveyResults}
+			Microsoft Corporation, "Survey Results: Open Source Developer Preferences (June 2011)," Microsoft Corporation, 11 July 2011. [Online]. Available: http://blogs.msdn.com/b/codeplex/archive/2011/07/11/survey-results-open-source-developer-preferences-june-2011.aspx. [Accessed 18th April 2015].
+			
+			\bibitem{WhatIsGui}
+			Webopedia.com. (2015). Available: http://www.webopedia.com/TERM/G/Graphical\_User\_Interface\_GUI.html. [Accessed 18th April 2015].
+			
+			\bibitem{FoundationVCforWebDevs}
+			C. Kemper and I. Oxley. Foundation Version Control for Web Developers. Berkeley, CA: Apress. 2012.
 			
 		\end{thebibliography}
 \end{document}
