@@ -6,6 +6,7 @@
 \usepackage{paralist}
 \usepackage{cite}
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 \begin{document}
 	% Settings of author and title
@@ -13,7 +14,7 @@
 	\author{Robin~Olofsson and Sebastian~Hultstrand}
 	%\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem R. Olofsson and S. Hultstrand are students are students at the Software engineering department at Blekinge Tekniska Högskola, Blekinge, Sweden.}
 	
-	% Abstract and keyword section
+	% Abstract and keyword section\include{.C:/Users/Robin/Documents/git-ui-thesis/git-ui-thesis}
 	\IEEEcompsoctitleabstractindextext{%
 		\begin{abstract}
 			This should be and abstract.
@@ -51,7 +52,20 @@
 			
 			\subsection{Command-line interface and the Graphical user interface}
 			There are two main ways of interfacing with Git, one is through a command-line interface and the other is through a graphical user interface.\\
+			
 			When using the command-line interface you type commands manually to make stuff happen whilst in the graphical user interface you will have something visual to interact with, such as buttons, input fields and so on.
+			\begin{figure}
+				\centering
+				\includegraphics[width=1\linewidth]{git-cli}
+				\caption{[Ligger fel.. ] Git command-line interface}
+				\label{fig:git-cli}
+			\end{figure}
+			\begin{figure}
+			\centering
+			\includegraphics[width=1\linewidth]{git-gui}
+			\caption{[Ligger fel.. ] Git graphical user interface, Sparkle}
+			\label{fig:git-gui}
+			\end{figure}
 			There's pros and cons with using either of the two interfaces.
 			For example, through a command-line you can perform some actions, like renaming 100 files with a lot less effort than with a graphical user interface but it would require you to know the commands needed to rename the files. One command can perform a lot of different tasks, whilst in a graphical user interface you would normally have to rename each file one by one which would require a lot more time but less knowledge.
 			
