@@ -1,33 +1,139 @@
 % git-ui-thesis.tex
 % Created: 3/4 2015
 
-\documentclass[12pt,a4paper,article,compsoc]{IEEEtran}
-\hyphenation{op-tical net-works semi-conduc-tor}
+%\documentclass[12pt,a4paper,article,compsoc]{IEEEtran}
+%\hyphenation{op-tical net-works semi-conduc-tor}
+\documentclass[a4paper,oneside]{bth} % I WANT "twocolumn"!!!
 \usepackage{paralist}
 \usepackage{cite}
 \usepackage{hyperref}
+%\usepackage{graphicx}
+
+\usepackage{amsmath}
+\usepackage{mathenv}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{textcomp}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{pifont}
+\usepackage{changepage}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{xspace}
+\usepackage{xtab}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf}
 
 \begin{document}
-	% Settings of author and title
-	\title{This title is not determined yet}
-	\author{Robin~Olofsson and Sebastian~Hultstrand}
-	%\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem R. Olofsson and S. Hultstrand are students are students at the Software engineering department at Blekinge Tekniska Högskola, Blekinge, Sweden.}
-	
-	% Abstract and keyword section
-	\IEEEcompsoctitleabstractindextext{%
-		\begin{abstract}
-			This should be and abstract.
-		\end{abstract}
-		\begin{IEEEkeywords}
-			Keywords separated by commas.
-		\end{IEEEkeywords}}
+		\pagestyle{plain}
+		\pagenumbering{roman}
 		
-		% Title
-		\maketitle
+		% Front matter
+		{\pagestyle{empty}
+		\changepage{5cm}{1cm}{-0.5cm}{-0.5cm}{}{-2cm}{}{}{}
+		\noindent%   
+			{\small
+				\begin{tabular}{p{0.75\textwidth} p{0.25\textwidth}}
+					\textit{Master Thesis}&\multirow{4}{*}{\bthcsnotextlogo{3cm}}
+					\\
+					\textit{Computer Science}
+					\\
+					\textit{Thesis no: MCS-2015-NN}
+					\\
+					\textit{06 2015}
+					\\
+				\end{tabular}
+			}
+			\begin{center}
+				\par\vspace {7cm}
+				{\Huge\textbf{Working with git user-interfaces}}   
+				\par\vspace {0.5cm}
+				{\Large\textbf{Centered Subtitle Times Font Size 16 Bold}}                   
+				\par\vspace {3cm}
+				{\Large\textbf{Robin Olofsson}}
+				\\
+				{\Large\textbf{Sebastian Hultstrand}}
+				\par\vspace {7cm}
+			\end{center}
+
+			\noindent%
+			{\small Dept. Computer Science \& Engineering 
+			\\
+			Blekinge Institute of Technology
+			\\
+			SE--371 79 Karlskrona, Sweden}
+			\clearpage
+		}
+
+		{\pagestyle{empty}
+			\changepage{5cm}{1cm}{-0.5cm}{-0.5cm}{}{-2cm}{}{}{}
+			\noindent%
+			\begin{tabular}{p{\textwidth}}
+				{\small This thesis is submitted to the Department of Computer Science \& Engineering at Blekinge Institute of Technology in partial fulfilment of the requirements for the degree of Master of Science in Computer Science. The thesis is equivalent to 20 weeks of full-time studies.}
+			\end{tabular}
+			\par\vspace {12cm}
+			\noindent%
+			\begin{tabular}{p{0.5\textwidth}lcl}
+				\textbf{Contact Information:}\\
+				Author(s):
+				\\
+				Robin Olofsson
+				\\
+				E-mail: acroyy@student.bth.se
+				\\
+				Sebastian Hultstrand
+				\\
+				E-mail: Sebastian@storm-net.se
+				\\
+				\par\vspace {5cm}
+				University advisor:
+				\\
+				Prof.\ Conny Johansson
+				\\
+				Dept. Computer Science \& Engineering
+				\par\vspace {1cm}
+				\noindent%
+ 				\\
+				Dept. Computer Science \& Engineering & Internet & : & www.bth.se/didd\\
+				Blekinge Institute of Technology & Phone	& : & +46 455 38 50 00 \\
+				SE--371 79 Karlskrona, Sweden & Fax & : & +46 455 38 50 57 \\
+			\end{tabular}
+			\clearpage
+		} % Back to \pagestyle{plain}
+
+		\setcounter{page}{1}
+
+		% ABSTRACT
+		\abstract
+		\begin{changemargin}{+1cm}{+1cm}
+			\noindent
+				Abstract goes here.
+
+			\par\vspace {1cm}
+			% 3-4 keywords, maximum 2 of these from the title, starts 1 line below the
+			% abstract.
+			\noindent
+			\textbf{Keywords:} 3-4 keywords, maximum 2 of these from the title, starts 1 line below the abstract.
+		\end{changemargin}
+
+		\tableofcontents 
+		\listoffigures %in case you have them
+		%\listoftables %in case you have them
+		%\listofalgorithms %in case you have them
+
+		\cleardoublepage
+		\pagestyle{headings}
+		\pagenumbering{arabic}
+		
+		% Settings of author and title
+		\title{This title is not determined yet}
+		\author{Robin~Olofsson and Sebastian~Hultstrand}
 		
 		% Content
-		\section{Introduction}
+		\chapter{Introduction}
 		Git is a very popular version control system out there today along with systems like SVN and Mercurial. And the discussions between using CLIs' (Command-line interfaces) or GUIs' (Graphical user interfaces) in general have been going on since the late 70's and early 80's when operating systems like the Lisa and Macintosh among others came out \cite{HistoryOfGUIWiki} and the GUI revolution was kicked into high gear.
 		To date people seem to prefer the CLI over GUI when working with Git, however it is not clear as to why.
 		Theories do exist which state that the CLI provides a faster and more controlled way of dealing with Git. \cite{GitUserSurvey}\cite{GitInClassroom}
@@ -43,14 +149,14 @@
 		We felt that a survey might provide enough information to carry out the work but by conducting interviews too a better understanding could actually be reached as to why the participants of the survey answered the way that they did.
 		
 		% Background
-		\section{Background}
-			\subsection{Git}
+		\chapter{Background}
+			\section{Git}
 			In 2005 the Linux development community started the development of Git.
 			Up until that point they had been using BitKeeper as their version control system. By that time BitKeeper was free but when the company behind the product decided to price it the Linux development community quickly abandoned the solution to develop their own open-source version control system.\cite{ProGit}
 			To date, Github alone has over 21.7 million repositories.\cite{GithubAbout} All of these repositories are, as might be obvious, Git repositories. 
 			Git is, today, one of the most common version control systems \cite{EclipseDeveoperReport}\cite{DeveloperProductivity}\cite{MicrosoftSurveyResults}.
 			
-			\subsection{Command-line interface and the Graphical user interface}
+			\section{Command-line interface and the Graphical user interface}
 			There are two main ways of interfacing with Git, one is through a command-line interface and the other is through a graphical user interface.\\
 			
 			When using the command-line interface you type commands manually to make stuff happen whilst in the graphical user interface you will have something visual to interact with, such as buttons, input fields and so on.
@@ -69,22 +175,22 @@
 			There's pros and cons with using either of the two interfaces.
 			For example, through a command-line you can perform some actions, like renaming 100 files with a lot less effort than with a graphical user interface but it would require you to know the commands needed to rename the files. One command can perform a lot of different tasks, whilst in a graphical user interface you would normally have to rename each file one by one which would require a lot more time but less knowledge.
 			
-			\subsection{Technical terms}
+			\section{Technical terms}
 			Below there is an explanation to common terms that will be used throughout this paper.
 			
-			\subsubsection{CLI}
+			\subsection{CLI}
 			CLI means command-line interface, which is a way to interact with a computer and perform certain tasks by typing commands on a line.
 			
-			\subsubsection{GUI}
+			\subsection{GUI}
 			GUI means graphical user interface. A graphical user interface is a program interface that takes advantage of the computer's graphics capabilities to make a the program easier to use \cite{WhatIsGui}.
 			
-			\subsubsection{VCS (Version Control System)}
+			\subsection{VCS (Version Control System)}
 			A VCS usually consists of two applications, one on a server-side and one on a client-side.
 			It's basic functionality is to maintain source code, other types of software files and their history.\cite{FoundationVCforWebDevs}
 			
 		% Research methodology
-		\section{Research methodology}
-			\subsection{Research questions}
+		\chapter{Research methodology}
+			\section{Research questions}
 			\begin{enumerate}
 				\item What is most commonly used when getting started with git, CLI or GUI?
 				\item What is most commonly used by experienced git users, CLI or GUI?
@@ -93,7 +199,7 @@
 				\item At what stage of git proficiency would you stand to gain the most from the CLI or the GUI? (Looking at what should you start out with to learn how git works and how it is used, and what you will gain the most from when you get to a higher level of understanding git.)
 			\end{enumerate}
 		
-			\subsection{Approach for answering research questions}
+			\section{Approach for answering research questions}
 			To answer the research questions a literature study was conducted to find out how git works, Git work-flows and discussions about the command line interface and the graphical user interface in general. Based on what is found, a design of a survey and a number of  questions for interviews was created.\\
 			The intention of the survey is to collect information about current users preferences and perceptions. We want to know what they are currently using (either CLI or GUI tool), how long they have been using it, what their perception of the two different types of interface is, how they work with git, how they began using it and how they learned to use it. This to find correlations between their experience with and use of git, to their preferences and reasoning behind their choice of tool.\\
 			The interviews will be based on more open questions where the aim is to allow the subject to elaborate around why they have chosen to work like they do, and discuss the perks of the two different types of interfaces that we put forward. The aim of the exercise is to get a deeper understanding of the reasoning that goes into the choice, an understanding that the survey will not be able to supply.\\
@@ -101,15 +207,15 @@
 			\\\\
 			In summary questions 1 and 2 will be answered in the survey where questions pertaining to what UI the subject is currently using and what UI the subject started using Git in. Correlations will also be searched for in the 2012 GitSurvey \cite{GitUserSurvey} to see how the results compare to other studies. Questions 3 and 4 will be answered in part through some of the perception related questions in the survey coupled with the interviews and most of all the usability assessment conducted on the UIs mentioned above. Finally question 5 will be answered by, in part, statistics from the survey by looking at questions pertaining to perception of the UIs, time consumption associated with the subjects use of git, both general and problem based, and the subjects varying use of and proficiency with git. Also partly through the interviews where being able to hear what drew the subjects to the UI that they use, what they believe to be important in the choice and their thoughts about what was found during the usability assessment.
 		 
-			\subsection{Literature review design}
+			\section{Literature review design}
 			
-			\subsection{Empirical study design}
+			\section{Empirical study design}
 			
-				\subsubsection{Survey}
-					\paragraph*{Goal with the survey}
+				\subsection{Survey}
+					\subsubsection*{Goal with the survey}
 					The survey consists of 13 multiple choice questions, the questions are aimed to be as easy and quick to answer as possible in order to persuade people to answer the survey. What the survey is aimed at finding out is the following; the level of experience the subject has with git, what UI they are currently using, what they have used in the past and if there is a specific reason for why they use the interface that they use. We also want to find out how the subject learned to use git, what they primarily use Git for, what operating system they are working on and how much time they spend on average interacting with Git as part of their development work. Finally we want to get some insight as to how often they need to consult another person or resources online or in handbooks to solve issues that arise in Git, accompanied with some word association with the two different UI types to get a statistical view of how the users perceive them.
 					
-					\paragraph*{Questions and alternatives}
+					\subsubsection*{Questions and alternatives}
 					\begin{enumerate}
 						\item How long have you been working with git?\\
 						\begin{inparaenum}[\itshape a\upshape)]
@@ -234,11 +340,11 @@
 						\end{inparaenum}
 					\end{enumerate}
 				
-					\paragraph*{Crafting and distribution}
+					\subsubsection*{Crafting and distribution}
 					The survey will be made as a web form that we can easily collect the data from and most of all distribute easily. Distribution of the survey is done through a number of different channels online such as BTH:s student mail list, through contacts at different Swedish companies, trough large companies that work with git that we have been able to procure assistance with and finally 3-7 [EXACT NUMBER LATER] different sub-reddits (Forum boards at the popular web forum Reddit) associated with software development.
 					To get as many responses as possible the survey is designed to be easy and quick to fill out and there is also going to be a lottery draw among the participants for three, one month gift subscriptions to the curio service Loot Crate. \cite{lootcrate} 
 				
-					\paragraph*{Analysis of survey}
+					\subsubsection*{Analysis of survey}
 					The survey is crafted so that it can be evaluated and analyzed in conjunction with the interviews. 
 					First a demographic for the replying party will be determined based on their answers to questions one and two. This demographic will be used when looking at the questions about what user interface they use and have used, their reasoning for using it and their perceptions of the user interfaces. The demographic is necessary to determine since the fifth research question is based on both experienced and inexperienced users. The interviews are designed in a way that will give more insight into the reasoning and perceptions of a certain demographic, but this is explained further in the Interviews chapter.
 					\\
@@ -250,7 +356,7 @@
 					Through the diagrams we could easily findout percentages of how many answered a question in a certain way and through that we could draw conclusions to help us in our attempt at answering the research questions.
 					
 				
-				\subsubsection{Interviews}
+				\subsection{Interviews}
 				The interviews are conducted with a small group of subjects that are representative of a certain demographic that answer the survey. The way that a demographic is determined in this context is the level of proficiency with git that the subject indicates and how long the subject has been using git for. 
 				These two aspects will allow analysis on a deeper level, of the needs and wants of different users. The minimum demographics to cover are new users of git whom are learning to use git at the moment and experienced users whom have used git often and for a long time. The identifiers for these two groups are;
 				\begin{itemize}
@@ -259,16 +365,16 @@
 					\item[Group 2 - Experienced users.]
 					These users have more than two years of experience and identify them selves as Pro or Master users.
 				\end{itemize}
-					\paragraph*{Interview format}
+					\subsubsection*{Interview format}
 					The format of the interviews will be a discussion on the topic of this paper where the aim is to get the subjects to explain their standing on the issue of CLI v. GUI in git interaction, and most of all elaborate around perceptions and experiences that they have. We will also supply some information about the UI:s to allow the sessions to go into as much detail as possible. 
 					We will conduct 4-7 [NUMBER TO BE DETERMINED LATER] interviews with a number of students new to git and a number of professionals using it every day, the sessions will be recorded and transcribed later to minimize the loss of information.
 					
-					\paragraph*{Questions and topics to discuss}
+					\subsubsection*{Questions and topics to discuss}
 		
 		% Literature study		
-		\section{Literature review}
+		\chapter{Literature review}
 		
-			\subsection{Command-line versus Graphical user interface}
+			\section{Command-line versus Graphical user interface}
 			Based on what we found people with experience about Git will in most, if not all cases prefer the command-line interface over the graphical user interface.\\
 			The reason behind this is however, not crystal clear.In the 2012 edition of GitSurvey \cite{GitUserSurvey}, about 97\% of the people who answered the question “What Git implementations do you use?”, use the git command-line whilst only 8\% use some graphical user interface.\\\\
 			If we go back to a time, before git. A time when the concept of graphical user interfaces were quite new, there was a study conducted on students to see whether they would prefer the command-line interface over the graphical user interface. The study was done at Waikato University, New Zealand, back in 1992 and involved a mix of Macintoshes and IBM PC compatibles.\\
@@ -282,18 +388,18 @@
 			Juergen Haas believes that the CLI is generally easier to use if you can remember the commands and options, which you probably would if you use them a lot. \cite{LinuxGuiVsCli}
 			
 			
-			\subsection{Summary of the literature study results}
+			\section{Summary of the literature study results}
 			The graphical user interfaces that are available for Git is a lot less used than the Git command-line. Yet people with low experience seem to prefer the graphical user interfaces because they appear to be easier to use. The people that answered the GitSurvey in 2012 was a group of mostly everyday users or more experienced than average users of Git \cite{GitUserSurvey}, so it is hard to judge whether the statement in the line above is valid or not but if you are to believe the previously introduced studies then it would make sense. After looking at the previous studies, we would have to say that command-line interfaces seem to be something that attracts more experienced users whilst graphical user interfaces attracts novice users.
 		
 		% Discussion	
-		\section{Discussion}
+		\chapter{Discussion}
 		
 		% Conclusion
-		\section{Conclusion}
+		\chapter{Conclusion}
 			
 		
 		% Acknowledgment section
-		\section*{Acknowledgment}
+		\chapter*{Acknowledgement}
 		
 		% References section
 		\newpage
