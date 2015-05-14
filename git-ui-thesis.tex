@@ -161,18 +161,20 @@
 			So depending on what version of the code you checkout from the .git directory, it will appear in the working directory. Then you code your changes and stage them, thus placing the changes securely in the staging area. Then the final step is to commit what is in the staging are and it will get saved into the .git directory. Then some repositories also have a remote host that the changes can be pushed to for ease of sharing the code. Those are the very basics of how git works \cite{GitStructure}
 			
 			\section{Command-line interface and the Graphical user interface}
-			There are two main ways of interfacing with Git, one is through a command-line interface and the other is through a graphical user interface.\\
+			There are two main ways of interfacing with Git, one is through a command-line interface and the other is through one of many graphical user interfaces. \cite{GitGUIs}\\
 			
-			When using the command-line interface you type commands manually to make stuff happen whilst in the graphical user interface you will have something visual to interact with, such as buttons, input fields and so on.
-			There's pros and cons with using either of the two interfaces.
-			For example, through a command-line you can perform some actions, like renaming 100 files with a lot less effort than with a graphical user interface but it would require you to know the commands needed to rename the files. One command can perform a lot of different tasks, whilst in a graphical user interface you would normally have to rename each file one by one which would require a lot more time but less knowledge.
+			When using the command-line interface you type commands manually to preform the desired actions whilst in the graphical user interface you will have something visual to interact with, such as buttons, input fields and so on.
+			There's pros and cons with using either of the two interfaces not only for git but in general.
+			For example, through a command-line you can perform some actions, like renaming 100 files with a lot less effort than with a graphical user interface but it would require you to know the commands needed to rename the files. One command can perform a lot of different tasks, whilst in a graphical user interface you would normally have to rename each file one by one which would require a lot more time but less knowledge. As mentioned in the introduction the debate of GUI v. CLI has been going on since the 80's and not a great deal has changed in the arguments, since they are so deeply ingrained in either interface. 
+			A good analogy is the car dealership comparison made in the article (Later a book) \textit{In the beginning was the command-line} (Stephens, 1999) \cite{InTheBeginning}. The summary of the analogy would be that there are a bunch of competing automotive dealerships on the same street where some are expensive, but easy to use and fairly cheep to repair however they often break down. Another sells sleek euro-style cars that no one really knows the inner workings of, they are expensive but beautiful. Then there is the super advanced tanks that are being given away for free. Yet still all the customers go for the cheap car that is sort of bad or the expensive euro-car. No one wants a tank even though they are free, because no one can be bothered to learn how to drive it. 
+			This analogy helps to illustrate the situation between the GUI and CLI very simply but quite accurately. 
 			
 			\section{Technical terms}
 			Below there is an explanation to common terms that will be used throughout this paper.
 			
 			\subsection{CLI}
 			CLI means command-line interface, which is a way to interact with a computer and perform certain tasks by typing commands into a text based interface, as depicted in figure 2.1.
-			\begin{figure}[h]
+			\begin{figure}[p]
 				\centering
 				\includegraphics[width=0.8\linewidth]{git-cli.jpg}
 				\caption{Git command-line interface, in Windows}
@@ -181,7 +183,7 @@
 			
 			\subsection{GUI}
 			GUI means graphical user interface. A graphical user interface is a program interface that takes advantage of the computer's graphics capabilities to make a the program easier to use \cite{WhatIsGui}, by way of human relatable representations and structures. An example of such an interface for git can be seen in figure 2.2.
-			\begin{figure}[h]
+			\begin{figure}[p]
 				\centering
 				\includegraphics[width=0.8\linewidth]{git-gui.png}
 				\caption{Git graphical user interface, Smart Git Hg on OSX}
@@ -483,6 +485,12 @@
 			
 			\bibitem{GitStructure}
 			Unlearn what you have learned. (2014). Git: How it works. Available: \url{http://bartoz.no-ip.org/archives/2981}. [Accessed 14th May 2015].
+			
+			\bibitem{GitGUIs}
+			Git SCM. GUI Clients. Available: \url{http://git-scm.com/downloads/guis}. [Accessed 14th May 2015].
+			
+			\bibitem{InTheBeginning}
+			Neal Stephenson. (1999). In the Beginning was the Command Line. Available: \url{http://cristal.inria.fr/~weis/info/commandline.html}	[Accessed: 14th May 2015].	
 			
 		\end{thebibliography}
 \end{document}
