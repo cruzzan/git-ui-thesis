@@ -210,7 +210,7 @@
       \@restonecolfalse
    \fi
    \chapter*{\listfigurename
-      \@mkboth{\listfigurename}{\listfigurename}}%  Headings not uppercased
+      \@mkboth{\listfigurename}{\listsubfigurename}}%  Headings not uppercased
    \@starttoc{lof}%
    \if@restonecol\twocolumn\fi
 }
