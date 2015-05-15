@@ -8,7 +8,7 @@
 \usepackage{cite}
 \usepackage{hyperref}
 \usepackage{float}
-\usepackage{tabu}
+\usepackage{tabu, tabularx, caption}
 %\usepackage{graphicx}
 
 \usepackage{amsmath}
@@ -396,7 +396,8 @@
 						
 						These questions are aimed at finding out more about what the subject needs and wants from the interface he or she works with. However factors that need to be taken into account when looking at this are how much the subjects knows about the interfaces, what type of work they actually do in Git and if the work is collaborative or not. These factors are covered in either the responses to the survey or the interview it self and will be taken into account in the discussion.
 				\subsection{User interface analysis}
-				The analysis will not be conducted according to any usability metrics or heuristics scale. The analysis will consist of looking at what is possible to do in either of the interfaces, functionality and ability to customize behaviour in order to optimize the way you work with the interface. Since the interfaces are very different and we do not possess the knowledge and tools needed we will not take aesthetics into account. The analysis will be a simple high level overview of the haves and don't-haves of the interfaces, basically a pros and cons list, this in order to stay objective.
+				The analysis will not be conducted according to any usability metrics or heuristics scale. The analysis will consist of looking at what is possible to do in either of the interfaces, functionality and ability to customize behaviour in order to optimize the way you work with the interface. Since the interfaces are very different and we do not possess the knowledge and tools needed we will not take aesthetics into account. Since the graphical user interfaces and the command-line interface have a basic set of functionality that are going to perform roughly the same tasks we will not take the basic functions into account, like staging, committing, merging, pushing, pulling, cloning and so on.
+				The analysis will be a simple high level overview of the haves and don't-haves of the interfaces, basically a pros and cons list, this in order to stay objective.
 		
 		% Literature study		
 		\chapter{Literature review}
@@ -422,7 +423,7 @@
 		\chapter{Results}
 			\section{Survey}
 			\section{Interviews}
-			The interviews were conducted with three subjects, each interview lasted approximately 5-15 minutes. It was found that the demographic of low amounts of git proficiency needed a litte help along to understand the questions and to elaborate on the answers. The help was given in an objective way in order to not lessen the value of the responses or skew the image in their mind, the more experienced we're a little bit more talkative and had more to say on the subject since they have had the time to test other solutions and options. 
+			The interviews were conducted with three subjects, each interview lasted approximately 5-15 minutes. It was found that the demographic of low amounts of git proficiency needed a little help along to understand the questions and to elaborate on the answers. The help was given in an objective way in order to not lessen the value of the responses or skew the image in their mind, the more experienced we're a little bit more talkative and had more to say on the subject since they have had the time to test other solutions and options. 
 			The full transcripts of the interviews can be found in appendix %TODO Add the acctual denominators for the interview appendixes.
 			\section{User interface analysis}
 				\begin{center}
@@ -430,8 +431,27 @@
 					\hline
 					Feature & CLI & SourceTree & Smart Git HG \\ 
 					\hline
+					Aliases and customizing actions & Yes & Yes & No \\
+					\hline
+					Readability of content & Partial & Partial & Yes \\
+					\hline
+					Freedom of work flow construction & Yes & Partial & Partial \\
+					\hline
+					Ease of setup & Yes & Yes & Yes \\
+					\hline
+					Overview ease & Partial & Yes & Yes \\
+					\hline
+					Change and branch visualization & Difficult & Partial & Yes \\
+					\hline
+					Comprehensive searching & Difficult & Yes & Partial \\
+					\hline
 					\end{tabular}
+					\captionof{table}{UI analysis} \label{tab:UI-Analysis}
 				\end{center}
+				\subsection{CLI}
+				Quite a large amount of functionality in the CLI can be quite advanced, in part giving it a lot of power and flexibility but it becomes more difficult to use. Searching through the change log and files for example can quite easily become complex but the results are very flexible and thus very useful. The same goes for most of the CLI the more specific you want to be and the more demands you have on the interaction the more difficult the process becomes. This is where aliases and custom actions come in handy. They are a way for the user to write the very difficult and complex command once and then call it by an alias of their choosing. 
+				\subsection{Source Tree}
+				\subsection{Smart Git Hg}
 		
 		% Analysis
 		\chapter{Analysis}
