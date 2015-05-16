@@ -428,7 +428,7 @@
 						These questions are aimed at finding out more about what the subject needs and wants from the interface he or she works with. However factors that need to be taken into account when looking at this are how much the subjects knows about the interfaces, what type of work they actually do in Git and if the work is collaborative or not. These factors are covered in either the responses to the survey or the interview it self and will be taken into account in the discussion.
 				\subsection{User interface analysis}
 				The analysis will not be conducted according to any usability metrics or heuristics scale. The analysis will consist of looking at what is possible to do in either of the interfaces, functionality and ability to customize behaviour in order to optimize the way you work with the interface. Since the interfaces are very different and we do not possess the knowledge and tools needed we will not take aesthetics into account. Since the graphical user interfaces and the command-line interface have a basic set of functionality that are going to perform roughly the same tasks we will not take the basic functions into account, like staging, committing, merging, pushing, pulling, cloning and so on.
-				The analysis will be a simple high level overview of the haves and don't-haves of the interfaces, basically a pros and cons list, this in order to stay objective.
+				The analysis will be a simple high level overview of the haves and don't-haves of the interfaces, basically a pros and cons list, this in order to stay objective. There are 4 different alternatives that can be designated for a feature, a simple yes or no, and difficult if the action to get a lot of use out of the functionality is complex, and finally partial if the feature is lacking in availability or flexibility compared to the other interfaces or if the feature is useful but limited in its basic form but can become less limited but the action to do so is difficult.
 		
 		% Literature study		
 		\chapter{Literature review}
@@ -639,9 +639,12 @@
 					\captionof{table}{UI analysis} \label{tab:UI-Analysis}
 				\end{center}
 				\subsection{CLI}
-				Quite a large amount of functionality in the CLI can be quite advanced, in part giving it a lot of power and flexibility but it becomes more difficult to use. Searching through the change log and files for example can quite easily become complex but the results are very flexible and thus very useful. The same goes for most of the CLI the more specific you want to be and the more demands you have on the interaction the more difficult the process becomes. This is where aliases and custom actions come in handy. They are a way for the user to write the very difficult and complex command once and then call it by an alias of their choosing. 
+				Quite a large amount of functionality in the CLI can be quite advanced, in part giving it a lot of power and flexibility but it becomes more difficult to use. Searching through the change log and files for example can quite easily become complex but the results are very flexible and thus very useful. The same goes for most of the CLI the more specific you want to be and the more demands you have on the interaction the more difficult the process becomes. This is where aliases and custom actions come in handy. They are a way for the user to write the very difficult and complex command once and then call it by an alias of their choosing making the process more affordable.
+				The most notable thing about the CLI is that it lacks very few of the features that the GUIs have, however some of them are very complex to perform in a similar fashion as the GUIs.
 				\subsection{Source Tree}
+				Source tree has at least partial support for all the features indicating that some of them are either limited or that they are complex to use. It should be mentioned that the UI can become quite cluttered and thus making information confusing to discern, for example viewing the change log along with graphs of the tree structure can be easy to get lost in.
 				\subsection{Smart Git Hg}
+				This GUI also had most of the features if not completely then partially. The only thing that was fully missing was the ability to create custom actions and aliases. This UI was more slimmed down than Source Tree and as such got a better score for the Change and branch visualization feature.
 		
 		% Analysis
 		\chapter{Analysis}
