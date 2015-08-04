@@ -615,6 +615,28 @@
 					\end{subfigure}
 					\caption{Started using - now using.}\label{fig:q9-q10}
 				\end{figure}
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-cli.png}
+					\caption{Correlation between experience and usage of the CLI}
+					\label{fig:Correlation between experience and usage of the CLI.}
+				\end{figure}
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-gui.png}
+					\caption{Correlation between experience and usage of the GUI}
+					\label{fig:Correlation between experience and usage of the GUI.}
+				\end{figure}
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-both.png}
+					\caption{Correlation between experience and usage of both the CLI and GUI}
+					\label{fig:Correlation between experience and usage of both the CLI and GUI.}
+				\end{figure}
+				
 			\section{Interviews}
 			The interviews were conducted with three subjects, each interview lasted approximately 5-15 minutes. It was found that the demographic of low amounts of git proficiency needed a little help along to understand the questions and to elaborate on the answers. The help was given in an objective way in order to not lessen the value of the responses or skew the image in their mind, the more experienced we're a little bit more talkative and had more to say on the subject since they have had the time to test other solutions and options. 
 			The full transcripts of the interviews can be found in appendix %TODO Add the acctual denominators for the interview appendixes.
@@ -678,8 +700,14 @@
 				If we start by taking a look at what interface our respondents started out using and what they use today, we can see that out of all the respondents that started using the CLI to interface with Git roughtly 76\% of them still use the CLI and only 7.2\% swapped to a graphical user interface, see Figure 5.17(a).
 				What it interesting though is that 16.9\% swapped over to use both the CLI and a GUI.
 				Meanwhile, if we take a look at the users that started using a graphical user interface about 52\% still use a graphical user interface while 25\% swapped over to the CLI and 22.5\% swapped to both CLI and GUI, see Figure 5.17(b).
-				We believe that there is a correlation between the fact that user swaps from their primary user interfact to use both CLI and a GUI and, based on the result the survey and interviews yelded, the fact that the CLI does lack visualization of logs but provide a more controlled environment.
-				% Behöver mer, vettefan huuur eller vaaad jag ska skriiva. :(
+				
+				There is a strong positive correlation between how experienced the respondents are and how many of them that use the CLI, as seen in Figure 5.18.
+				The same does not however apply to the usage of the GUI, because as we can see in Figure 5.19 there's a strong negative correlation which can be interpreted as the more experience the respondents have the less likely they are to use solely a GUI when interfacing with Git. In fact, none of the highly experienced respondents use a GUI solely (Figure 5.10 c).
+				
+				The correlation analysis put together with the results from the interviews - the fact that the CLI does lack visualization of logs but provide a more controlled environment - shows that graphical user interfaces are more attractive amongst novice users than experienced users.
+				But as the users gain experience they seem to swap their GUI for a CLI or to use them both together.\\
+				We think it's safe to say that answering RQ5 is close to impossible, if not impossible.
+				Our guess is that to answer this question you'd probably have to measure the time it takes to perform typical Git actions in both the GUI and the CLI for a large sample group where the level of experience is very uneven. You would probably have to take in a account that they all work with Git in different ways, someone might just use Git as a way to collaborate with colleagues whilst someone else might use it to review code. Their ways of interacting with Git could be very different. Needless to say, the work required to answer this question would most likely take a tremendous amount of time.
 				
 		
 		% Conclusion
