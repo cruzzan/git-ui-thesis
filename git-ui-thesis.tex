@@ -51,9 +51,9 @@
 			}
 			\begin{center}
 				\par\vspace {7cm}
-				{\Huge\textbf{Working with git user-interfaces}}   
+				{\Huge\textbf{Git - CLI or GUI}}   
 				\par\vspace {0.5cm}
-				{\Large\textbf{Centered Subtitle Times Font Size 16 Bold}}                   
+				{\Large\textbf{Which is most widely used and why?}}                   
 				\par\vspace {3cm}
 				{\Large\textbf{Robin Olofsson}}
 				\\
@@ -74,7 +74,7 @@
 			\changepage{5cm}{1cm}{-0.5cm}{-0.5cm}{}{-2cm}{}{}{}
 			\noindent%
 			\begin{tabular}{p{\textwidth}}
-				{\small This thesis is submitted to the Department of Computer Science \& Engineering at Blekinge Institute of Technology in partial fulfilment of the requirements for the degree of Master of Science in Computer Science. The thesis is equivalent to 20 weeks of full-time studies.}
+				{\small This thesis is submitted to the Department of Computer Science \& Engineering at Blekinge Institute of Technology in partial fulfilment of the requirements for the degree of Bachelors of Science in Computer Science. The thesis is equivalent to 20 weeks of part-time studies.}
 			\end{tabular}
 			\par\vspace {12cm}
 			\noindent%
@@ -84,7 +84,7 @@
 				\\
 				Robin Olofsson
 				\\
-				E-mail: \url{Olofsson_@live.se}
+				E-mail: Olofsson\_@live.se
 				\\
 				Sebastian Hultstrand
 				\\
@@ -93,7 +93,7 @@
 				\par\vspace {5cm}
 				University advisor:
 				\\
-				Prof.\ Conny Johansson
+				Assistant Prof.\ Conny Johansson
 				\\
 				Dept. Computer Science \& Engineering
 				\par\vspace {1cm}
@@ -153,7 +153,7 @@
 		To find these answers we have conducted a survey, through an online service, that has been sent out to developers within the industry and students at Blekinge Institute of Technology.
 		A literature study has been carried out as well, mainly to help  gather as much knowledge about current opinions within the scientific scene about the CLI and GUI interfaces.
 		The results of the literature study enabled the creation of a  survey and after further development of the questions, used in the survey, a small number of interviews were conducted to get a deeper understanding of the choices made.
-		We felt that a survey might provide enough information to carry out the work but by conducting interviews too a better understanding could actually be reached as to why the participants of the survey answered the way that they did.
+		We felt that a survey might provide enough information to carry out the work but by conducting interviews too a better understanding could actually be reached as to why the participants, of the survey, answered the way that they did.
 		
 		% Background
 		\chapter{Background}
@@ -173,7 +173,15 @@
 			There's pros and cons with using either of the two interfaces not only for git but in general.
 			For example, through a command-line you can perform some actions, like renaming 100 files with a lot less effort than with a graphical user interface but it would require you to know the commands needed to rename the files. One command can perform a lot of different tasks, whilst in a graphical user interface you would normally have to rename each file one by one which would require a lot more time but less knowledge. As mentioned in the introduction the debate of GUI v. CLI has been going on since the 80's and not a great deal has changed in the arguments, since they are so deeply ingrained in either interface. 
 			A good analogy is the car dealership comparison made in the article (Later a book) \textit{In the beginning was the command-line} (Stephens, 1999) \cite{InTheBeginning}. The summary of the analogy would be that there are a bunch of competing automotive dealerships on the same street where some are expensive, but easy to use and fairly cheep to repair however they often break down. Another sells sleek euro-style cars that no one really knows the inner workings of, they are expensive but beautiful. Then there is the super advanced tanks that are being given away for free. Yet still all the customers go for the cheap car that is sort of bad or the expensive euro-car. No one wants a tank even though they are free, because no one can be bothered to learn how to drive it. 
-			This analogy helps to illustrate the situation between the GUI and CLI very simply but quite accurately. 
+			This analogy helps to illustrate the situation between the GUI and CLI very simply but quite accurately.
+			 
+			\section{Terminology used}
+			\begin{itemize}
+				\item Demographic - The word demographic is used in this thesis and refers to a certain group that answered our survey. The groups members are defined by their indicated level of proficiency with git, and the amount of time they have worked with git. The determination of which demographic a respondent falls in is made up of a point system. The alternatives are given an arbitrary point value to signify rank and when the points for the chosen alternatives are added up we get the sum for the respondent. Low is defined as 2-4, mid 5-7 and high 8-9. We did this in order to make it possible to split the respondents into demographics.
+				\item UI - The word is an abbreviation of the term user interface and refers to either the graphical user interface, command-line interface or both.
+				\item CLI - Command-line interface, explained further in the "Techincal terms"-section below.
+				\item GUI - Graphical user interface, explained further in the "Techincal terms"-section below.
+			\end{itemize}
 			
 			\section{Technical terms}
 			Below there is an explanation to common terms that will be used throughout this paper.
@@ -210,11 +218,7 @@
 			This action will allow all of your colleagues to have roughly the same source code base. From there on out you and your colleagues can battle against the mistakes that has been produced  and once you feel confident enough on the software you can roll out a release.\cite{vcsExplanation}
 			
 			
-			\section{Terminology used}
-				\begin{itemize}
-					\item Demographic - The word demographic is used in this thesis and refers to a certain group that answered our survey. The groups members are defined by their indicated level of proficiency with git, and the amount of time they have worked with git. The determination of which demographic a respondent falls in is made up of a point system. The alternatives are given an arbitrary point value to signify rank and when the points for the chosen alternatives are added up we get the sum for the respondent. Low is defined as 2-4, mid 5-7 and high 8-9. We did this in order to make it possible to split the respondents into demographics.
-					\item UI - The word is an abbreviation of the term user interface and refers to either the graphical user interface, command-line interface or both.
-				\end{itemize}
+			
 			
 		% Research methodology
 		\chapter{Research methodology}
@@ -439,124 +443,33 @@
 			\section{Command-line versus Graphical user interface}
 			Based on what we found people with experience about Git will in most, if not all cases prefer the command-line interface over the graphical user interface.\\
 			The reason behind this is however, not crystal clear.In the 2012 edition of GitSurvey \cite{GitUserSurvey}, about 97\% of the people who answered the question “What Git implementations do you use?”, use the git command-line whilst only 8\% use some graphical user interface.\\\\
-			If we go back to a time, before git. A time when the concept of graphical user interfaces were quite new, there was a study conducted on students to see whether they would prefer the command-line interface over the graphical user interface. The study was done at Waikato University, New Zealand, back in 1992 and involved a mix of Macintoshes and IBM PC compatibles.\\
+			If we go back to a time, before git. A time when the concept of graphical user interfaces were quite new, there was a study conducted on students to see whether they would prefer the command-line interface over the graphical user interface. A study was done at Waikato University, New Zealand, back in 1992 and involved a mix of Macintoshes and IBM PC compatibles \cite{Treweek}.\\
 			A group of students were placed in front of these machines so that the staff was able to observe how they responded to interacting towards Macintoshes graphical interface and IBM PC compatibles command-line.\\
 			The theory was that the students, whom had no prior computer experience, would prefer the Macintosh because of the fact that a graphical user interface has a less harsh learning curve than a command-line.This theory was also backed up by Morgan, et al \cite{MouseToRat} and Kirkpatrick et al \cite{MacVsWindows}.\\
 			Based on this study and another, more git-focused study that was conducted in 2014 \cite{GitInClassroom}, the theory seems to be that graphical user interfaces would appeal to novice users more.\\
 			However theoretically, as users get more and more experienced they will gradually start to prefer the command-line interface over a graphical user interface because they are able to complete their tasks faster and to maintain more control over what they are doing and what's going on.\\\\
-			Now, lets forget about the theories and focus on what these studies yielded in the form of results. Generally speaking it would seem that a user tends to use what they find to be easier \cite{Treweek}. Because graphical user interfaces do have a more lenient learning curve it would therefore appear logical that a user would prefer that over a command-line interface. In terms of Git, graphical user interfaces are likely more valuable when the knowledge of the system matures for the user \cite{GitInClassroom}. Git is complex, if you check the answers for the question “What do you hate about Git?” in the 2012 edition of GitSurvey you will notice that this is one of the answers. Another answer to this question is ”requires steep learning curve for newbies”. This is what spurred the development of graphical user interfaces for Git, the goal was to hide some of Git:s complexity. \cite{WrongWithGit}
+			Generally speaking it would seem that a user tends to use what they find to be easier \cite{Treweek}. Because graphical user interfaces do have a more lenient learning curve it would therefore appear logical that a user would prefer that over a command-line interface. In terms of Git, graphical user interfaces are likely more valuable when the knowledge of the system matures for the user \cite{GitInClassroom}. Git is complex, if you check the answers for the question “What do you hate about Git?” in the 2012 edition of GitSurvey you will notice that this is one of the answers. Another answer to this question is ”requires steep learning curve for newbies”. This is what spurred the development of graphical user interfaces for Git, the goal was to hide some of Git:s complexity. \cite{WrongWithGit}
 			
-			According to Eric S. Raymond, the disadvantage of the commandline interface is that it almost always has high mnemonic load (low ease), and usually has low transparency. Most people (especially non-technical end users) find such interfaces relatively cryptic and difficult to learn. \cite{ArtOfUnixProgramming}
+			According to Eric S. Raymond\cite{ArtOfUnixProgramming}, the disadvantage of the commandline interface is that it almost always has high mnemonic load (low ease), and usually has low transparency. Most people (especially non-technical end users) find such interfaces relatively cryptic and difficult to learn. \cite{ArtOfUnixProgramming}
 			Juergen Haas believes that the CLI is generally easier to use if you can remember the commands and options, which you probably would if you use them a lot. \cite{LinuxGuiVsCli}
 			
 			
 			\section{Summary of the literature study results}
-			The graphical user interfaces that are available for Git is a lot less used than the Git command-line. Yet people with low experience seem to prefer the graphical user interfaces because they appear to be easier to use. The people that answered the GitSurvey in 2012 was a group of mostly everyday users or more experienced than average users of Git \cite{GitUserSurvey}, so it is hard to judge whether the statement in the line above is valid or not but if you are to believe the previously introduced studies then it would make sense. After looking at the previous studies, we would have to say that command-line interfaces seem to be something that attracts more experienced users whilst graphical user interfaces attracts novice users.
+			The graphical user interfaces that are available for Git is a lot less used than the Git command-line. Results from previous studies shows that people with low experience seem to prefer the graphical user interfaces because they appear to be easier to use. The people that answered the GitSurvey in 2012 was a group of mostly everyday users or more experienced than average users of Git \cite{GitUserSurvey}, so it is hard to judge whether the statement in the line above is valid or not but if you are to believe the previously introduced studies then it would make sense. After looking at the previous studies, we would have to say that command-line interfaces seem to be something that attracts more experienced users whilst graphical user interfaces attracts novice users.
 		
 		% Results	
 		\chapter{Results}
 			\section{Survey}
-			The survey got 358 responses from people around the world whom use git in one way or another. The sizes of each demographic can be seen below in figure 5.1.
+			The survey got 367 responses from people around the world whom use git in one way or another. The sizes of each demographic can be seen below in figure 5.1.
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.5\linewidth]{graphs/demo_split.png}
 				\caption{Graph showing the split among the demographics covered in the survey}
 				\label{fig:graph-demo-split}
 			\end{figure}
-			Below follows graphical representations of how the respondents to the survey answered each question, these diagrams show the full spectrum of respondants as a whole. More in-depth graphs with different conditions will follow after that.
-			\begin{figure}[H]
-				\centering
-				\begin{subfigure}[b]{0.45\textwidth}
-					\includegraphics[width=\textwidth]{graphs/q1.png}
-					\caption{Representation of results of question 1}
-					\label{fig:q1}
-				\end{subfigure}
-				~
-				\begin{subfigure}[b]{0.45\textwidth}
-					\includegraphics[width=\textwidth]{graphs/q2.png}
-					\caption{Representation of results of question 2}
-					\label{fig:q2}
-				\end{subfigure}
-				\caption{Questions 1 and 2}\label{fig:q1-q2}
-			\end{figure}
-			\begin{figure}[H]
-				\centering
-				\begin{subfigure}[b]{0.45\textwidth}
-					\includegraphics[width=\textwidth]{graphs/q3.png}
-					\caption{Representation of results of question 3}
-					\label{fig:q3}
-				\end{subfigure}
-				~
-				\begin{subfigure}[b]{0.45\textwidth}
-					\includegraphics[width=\textwidth]{graphs/q4.png}
-					\caption{Representation of results of question 4}
-					\label{fig:q4}
-				\end{subfigure}
-				\caption{Questions 3 and 4}\label{fig:q3-q4}
-			\end{figure}
-			\begin{figure}[H]
-				\centering
-				\begin{subfigure}[b]{0.45\textwidth}
-					\includegraphics[width=\textwidth]{graphs/q5.png}
-					\caption{Representation of results of question 5}
-					\label{fig:q5}
-				\end{subfigure}
-				~
-				\begin{subfigure}[b]{0.45\textwidth}
-					\includegraphics[width=\textwidth]{graphs/q6.png}
-					\caption{Representation of results of question 6}
-					\label{fig:q6}
-				\end{subfigure}
-				\caption{Questions 5 and 6}\label{fig:q5-q6}
-			\end{figure}
-			\begin{figure}[H]
-				\centering
-				\begin{subfigure}[b]{0.45\textwidth}
-					\includegraphics[width=\textwidth]{graphs/q7.png}
-					\caption{Representation of results of question 7}
-					\label{fig:q7}
-				\end{subfigure}
-				~
-				\begin{subfigure}[b]{0.45\textwidth}
-					\includegraphics[width=\textwidth]{graphs/q8.png}
-					\caption{Representation of results of question 8}
-					\label{fig:q8}
-				\end{subfigure}
-				\caption{Questions 7 and 8}\label{fig:q7-q8}
-			\end{figure}
-			\begin{figure}[H]
-				\centering
-				\begin{subfigure}[b]{0.45\textwidth}
-					\includegraphics[width=\textwidth]{graphs/q9.png}
-					\caption{Representation of results of question 9}
-					\label{fig:q9}
-				\end{subfigure}
-				~
-				\begin{subfigure}[b]{0.45\textwidth}
-					\includegraphics[width=\textwidth]{graphs/q10.png}
-					\caption{Representation of results of question 10}
-					\label{fig:q10}
-				\end{subfigure}
-				\caption{Questions 9 and 10}\label{fig:q9-q10}
-			\end{figure}
-			\begin{figure}[H]
-				\centering
-				\includegraphics[width=0.8\linewidth]{graphs/q11.png}
-				\caption{Representation of results of question 11}
-				\label{fig:q11}
-			\end{figure}
-			\begin{figure}[H]
-				\centering
-				\includegraphics[width=0.8\linewidth]{graphs/q12.png}
-				\caption{Representation of results of question 12}
-				\label{fig:q12}
-			\end{figure}
-			\begin{figure}[H]
-				\centering
-				\includegraphics[width=0.5\linewidth]{graphs/q13.png}
-				\caption{Representation of results of question 13}
-				\label{fig:q13}
-			\end{figure}
+			In Appendix A you can find graphical representations of how the respondents to the survey answered each question, these diagrams show the full spectrum of respondants as a whole. More in-depth graphs with different conditions will follow after that.
+			
+			
 			From here we will present different representations that pertain to a certain aspect of the study, these will have different sets of data depending on what demographic we are looking at and the different combinations of answers that are being looked at.
 			\begin{figure}[H]
 					\centering
@@ -579,42 +492,6 @@
 					\end{subfigure}
 					\caption{Representation of which interface users indicate that they use depending on demographic}\label{fig:mid-high-users-use}
 				\end{figure}
-				\begin{figure}[H]
-					\centering
-					\includegraphics[width=0.95\textwidth]{graphs/common-words-low-users-gui.png}
-					\caption{Low experienced Git users - common words associated with Git GUI.}
-					\label{fig:Low users - common words associated with Git GUI.}
-				\end{figure}
-				\begin{figure}[H]
-					\centering
-					\includegraphics[width=0.95\textwidth]{graphs/common-words-low-users-cli.png}
-					\caption{Low experienced Git users - common words associated with Git CLI.}
-					\label{fig:Low users - common words associated with Git CLI.}
-				\end{figure}
-				\begin{figure}[H]
-					\centering
-					\includegraphics[width=0.95\textwidth]{graphs/common-words-mid-users-gui.png}
-					\caption{Mid experienced Git users - common words associated with Git GUI.}
-					\label{fig:Mid users - common words associated with Git GUI.}
-				\end{figure}
-				\begin{figure}[H]
-					\centering
-					\includegraphics[width=0.95\textwidth]{graphs/common-words-mid-users-cli.png}
-					\caption{Mid experienced Git users - common words associated with Git CLI.}
-					\label{fig:Mid users - common words associated with Git CLI.}
-				\end{figure}
-				\begin{figure}[H]
-					\centering
-					\includegraphics[width=0.95\textwidth]{graphs/common-words-high-users-gui.png}
-					\caption{Highly experienced Git users - common words associated with Git GUI.}
-					\label{fig:High users - common words associated with Git GUI.}
-				\end{figure}
-				\begin{figure}[H]
-					\centering
-					\includegraphics[width=0.95\textwidth]{graphs/common-words-high-users-cli.png}
-					\caption{Highly experienced Git users - common words associated with Git CLI.}
-					\label{fig:High users - common words associated with Git CLI.}
-				\end{figure}
 				
 				\begin{figure}[H]
 					\centering
@@ -632,26 +509,8 @@
 					\caption{Started using - now using.}\label{fig:q9-q10}
 				\end{figure}
 				
-				\begin{figure}[H]
-					\centering
-					\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-cli.png}
-					\caption{Correlation between experience and usage of the CLI}
-					\label{fig:Correlation between experience and usage of the CLI.}
-				\end{figure}
 				
-				\begin{figure}[H]
-					\centering
-					\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-gui.png}
-					\caption{Correlation between experience and usage of the GUI}
-					\label{fig:Correlation between experience and usage of the GUI.}
-				\end{figure}
 				
-				\begin{figure}[H]
-					\centering
-					\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-both.png}
-					\caption{Correlation between experience and usage of both the CLI and GUI}
-					\label{fig:Correlation between experience and usage of both the CLI and GUI.}
-				\end{figure}
 				
 			\section{Interviews}
 			The interviews were conducted with three subjects, each interview lasted approximately 5-15 minutes. It was found that the demographic of low amounts of git proficiency needed a little help along to understand the questions and to elaborate on the answers. The help was given in an objective way in order to not lessen the value of the responses or skew the image in their mind, the more experienced we're a little bit more talkative and had more to say on the subject since they have had the time to test other solutions and options. 
@@ -822,4 +681,183 @@
 			Git SCM. Getting Started - About Version Control. Available: \url{https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control}. [Accessed 3rd August 2015].
 			
 		\end{thebibliography}
+		
+		\appendix
+		\chapter{Data from survey}
+		\begin{figure}[H]
+			\centering
+			\begin{subfigure}[b]{0.45\textwidth}
+				\includegraphics[width=\textwidth]{graphs/q1.png}
+				\caption{Representation of results of question 1}
+				\label{fig:q1}
+			\end{subfigure}
+			~
+			\begin{subfigure}[b]{0.45\textwidth}
+				\includegraphics[width=\textwidth]{graphs/q2.png}
+				\caption{Representation of results of question 2}
+				\label{fig:q2}
+			\end{subfigure}
+			\caption{Questions 1 and 2}\label{fig:q1-q2}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\begin{subfigure}[b]{0.45\textwidth}
+				\includegraphics[width=\textwidth]{graphs/q3.png}
+				\caption{Representation of results of question 3}
+				\label{fig:q3}
+			\end{subfigure}
+			~
+			\begin{subfigure}[b]{0.45\textwidth}
+				\includegraphics[width=\textwidth]{graphs/q4.png}
+				\caption{Representation of results of question 4}
+				\label{fig:q4}
+			\end{subfigure}
+			\caption{Questions 3 and 4}\label{fig:q3-q4}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\begin{subfigure}[b]{0.45\textwidth}
+				\includegraphics[width=\textwidth]{graphs/q5.png}
+				\caption{Representation of results of question 5}
+				\label{fig:q5}
+			\end{subfigure}
+			~
+			\begin{subfigure}[b]{0.45\textwidth}
+				\includegraphics[width=\textwidth]{graphs/q6.png}
+				\caption{Representation of results of question 6}
+				\label{fig:q6}
+			\end{subfigure}
+			\caption{Questions 5 and 6}\label{fig:q5-q6}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\begin{subfigure}[b]{0.45\textwidth}
+				\includegraphics[width=\textwidth]{graphs/q7.png}
+				\caption{Representation of results of question 7}
+				\label{fig:q7}
+			\end{subfigure}
+			~
+			\begin{subfigure}[b]{0.45\textwidth}
+				\includegraphics[width=\textwidth]{graphs/q8.png}
+				\caption{Representation of results of question 8}
+				\label{fig:q8}
+			\end{subfigure}
+			\caption{Questions 7 and 8}\label{fig:q7-q8}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\begin{subfigure}[b]{0.45\textwidth}
+				\includegraphics[width=\textwidth]{graphs/q9.png}
+				\caption{Representation of results of question 9}
+				\label{fig:q9}
+			\end{subfigure}
+			~
+			\begin{subfigure}[b]{0.45\textwidth}
+				\includegraphics[width=\textwidth]{graphs/q10.png}
+				\caption{Representation of results of question 10}
+				\label{fig:q10}
+			\end{subfigure}
+			\caption{Questions 9 and 10}\label{fig:q9-q10}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.8\linewidth]{graphs/q11.png}
+			\caption{Representation of results of question 11}
+			\label{fig:q11}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.8\linewidth]{graphs/q12.png}
+			\caption{Representation of results of question 12}
+			\label{fig:q12}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\linewidth]{graphs/q13.png}
+			\caption{Representation of results of question 13}
+			\label{fig:q13}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.95\textwidth]{graphs/common-words-low-users-gui.png}
+			\caption{Low experienced Git users - common words associated with Git GUI.}
+			\label{fig:Low users - common words associated with Git GUI.}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.95\textwidth]{graphs/common-words-low-users-cli.png}
+			\caption{Low experienced Git users - common words associated with Git CLI.}
+			\label{fig:Low users - common words associated with Git CLI.}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.95\textwidth]{graphs/common-words-mid-users-gui.png}
+			\caption{Mid experienced Git users - common words associated with Git GUI.}
+			\label{fig:Mid users - common words associated with Git GUI.}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.95\textwidth]{graphs/common-words-mid-users-cli.png}
+			\caption{Mid experienced Git users - common words associated with Git CLI.}
+			\label{fig:Mid users - common words associated with Git CLI.}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.95\textwidth]{graphs/common-words-high-users-gui.png}
+			\caption{Highly experienced Git users - common words associated with Git GUI.}
+			\label{fig:High users - common words associated with Git GUI.}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.95\textwidth]{graphs/common-words-high-users-cli.png}
+			\caption{Highly experienced Git users - common words associated with Git CLI.}
+			\label{fig:High users - common words associated with Git CLI.}
+		\end{figure}
+		
+		
+		
+		\chapter{Correlation Analysis \& Crosstabs}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-cli.png}
+			\caption{Correlation between experience and usage of the CLI}
+			\label{fig:Correlation between experience and usage of the CLI.}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-gui.png}
+			\caption{Correlation between experience and usage of the GUI}
+			\label{fig:Correlation between experience and usage of the GUI.}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-both.png}
+			\caption{Correlation between experience and usage of both the CLI and GUI}
+			\label{fig:Correlation between experience and usage of both the CLI and GUI.}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\textwidth]{graphs/crosstabulation-learnt-using.png}
+			\caption{A crosstabulation showing how many that learnt Git through each of the options available in question 4, in the survey, and what interface they are using now.}
+			\label{fig:crosstabulation - what interface they are using x how they learnt Git}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\textwidth]{graphs/crosstabulation-how-using-git-interface.png}
+			\caption{A crosstabulation showing what respondents use Git for and what interface they are using for their work.}
+			\label{fig:crosstabulation - what interface they are using x what they use Git for.}
+		\end{figure}
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\textwidth]{graphs/crosstabulation-os-using.png}
+			\caption{A crosstabulation showing what OS respondents use and what interface they are using.}
+			\label{fig:crosstabulation - what interface they are using x what OS they use.}
+		\end{figure}
+		
 \end{document}
