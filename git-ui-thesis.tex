@@ -146,7 +146,7 @@
 		Theories do exist which state that the CLI provides a faster and more controlled way of dealing with Git. \cite{GitUserSurvey}\cite{GitInClassroom}
 		\\
 		The reason this topic was thought of in the first place is due to an observation made in one of our classes. As of the day of writing there is no real formal introduction course to version control at Blekinge Institute of Technology, much less to Git. So instead there are a small number of courses where students are introduced to Git alongside the actual content of the course and most of the learning is left to what the student chooses to find out.
-		During one of these introduction talks about Git the students were encouraged to start out by using the command-line interface in order to get a feel for how Git works. This was met by a lot of complaining from the students as they would rather use one of the graphical user interfaces. The subsequent discussion that ensued was the spark that lit the idea to do this research.
+		During one of these introduction talks about Git the students were encouraged to start out by using the command-line interface in order to get a feel for how Git works. This was met by a lot of complaining from the students as they would rather use a graphical user interface. The subsequent discussion that ensued was the spark that lit the idea to do this research.
 		\\
 		In this paper a closer look is taken into what people use today, in terms of interfaces to work with Git, and if there's any correlation to be found between how people use Git and which interface is used to do so.
 		The aim is to find out which interface is more preferred, which is more suitable to novice users and if developers can benefit more from using either of the two interfaces when reaching a certain knowledge-level of Git.
@@ -169,7 +169,7 @@
 			\section{Command-line interface and the Graphical user interface}
 			There are two main ways of interfacing with Git, one is through a command-line interface and the other is through one of many graphical user interfaces. \cite{GitGUIs}\\
 			
-			When using the command-line interface you type commands manually to preform the desired actions whilst in the graphical user interface you will have something visual to interact with, such as buttons, input fields and so on.
+			When using the command-line interface you type commands manually to preform the desired actions whilst in a graphical user interface you will have something visual to interact with, such as buttons, input fields and so on.
 			There's pros and cons with using either of the two interfaces not only for Git but in general.
 			For example, through a command-line you can perform some actions, like renaming 100 files with a lot less effort than with a graphical user interface but it would require you to know the commands needed to rename the files. One command can perform a lot of different tasks, whilst in a graphical user interface you would normally have to rename each file one by one which would require a lot more time but less knowledge. As mentioned in the introduction the debate of GUI v. CLI has been going on since the 80's and not a great deal has changed in the arguments, since they are so deeply ingrained in either interface. 
 			A good analogy is the car dealership comparison made in the article (Later a book) \textit{In the beginning was the command-line} (Stephens, 1999) \cite{InTheBeginning}. The summary of the analogy would be that there are a bunch of competing automotive dealerships on the same street where some are expensive, but easy to use and fairly cheep to repair however they often break down. Another sells sleek euro-style cars that no one really knows the inner workings of, they are expensive but beautiful. Then there is the super advanced tanks that are being given away for free. Yet still all the customers go for the cheap car that is sort of bad or the expensive euro-car. No one wants a tank even though they are free, because no one can be bothered to learn how to drive it. 
@@ -209,7 +209,7 @@
 				Every time you feel like you are content with a change you've made, such as a bug fix or the addition of a new feature, you commit your changes to the repository alongside with a explanatory message to let everyone know what's new/changed.
 				Then, every once in a while, you update/synchronize your private version of the project with the changes your colleagues have committed.
 				This action will allow all of your colleagues to have roughly the same source code base. From there on out you and your colleagues can battle against the mistakes that has been produced  and once you feel confident enough on the software you can roll out a release.\cite{vcsExplanation}
-				\item UI - The word is an abbreviation of the term user interface and refers to either the graphical user interface, command-line interface or both.
+				\item UI - The word is an abbreviation of the term user interface and refers to either a graphical user interface, the command-line interface or both.
 				\item CLI - Command-line interface.
 				\item GUI - Graphical user interface.
 			\end{itemize}
@@ -226,7 +226,7 @@
 			\end{enumerate}
 		
 			\section{Approach for answering research questions}
-			To answer the research questions a literature study was conducted to find out how Git works, Git work-flows and discussions about the command line interface and the graphical user interface in general. Based on what is found, a design of a survey and a number of  questions for interviews was created.\\
+			To answer the research questions a literature study was conducted to find out how Git works, Git workflows and discussions about the command-line interface and about graphical user interface in general. Based on what is found, a design of a survey and a number of  questions for interviews was created.\\
 			The intention of the survey is to collect information about current users preferences and perceptions. We want to know what they are currently using (either CLI or GUI tool), how long they have been using it, what their perception of the two different types of interface is, how they work with Git, how they began using it and how they learned to use it. This to find correlations between their experience with and use of Git, to their preferences and reasoning behind their choice of tool.\\
 			The interviews will be based on more open questions where the aim is to allow the subject to elaborate around why they have chosen to work like they do, and discuss the perks of the two different types of interfaces that we put forward. The aim of the exercise is to get a deeper understanding of the reasoning that goes into the choice, an understanding that the survey will not be able to supply.\\
 			Thirdly we will also be looking at examples of the UIs to make an assessment of what users can gain from the particular interface in tearms of functionality and convenience. We will look at the CLI tool in a Linux environment, the GUI based tools Sourcetree and Smart Git Hg, both of which are available for the three large platforms (Windows, Mac and Linux).\\
@@ -235,7 +235,7 @@
 			\\\\
 			In summary questions 1 and 2 will be answered in the survey where questions pertaining to what UI the subject is currently using and what UI the subject started using Git in. Correlations will also be searched for in the 2012 GitSurvey \cite{GitUserSurvey} to see how the results compare to other studies.
 			Questions 3 and 4 will be answered in part through some of the perception related questions in the survey coupled with the interviews and most of all the analysis conducted on the UIs mentioned above. Finally question 5 will be answered by, in part, statistics from the survey by looking at questions pertaining to perception of the UIs, time consumption associated with the subjects use of Git, both general and problem based, and the subjects varying use of and proficiency with Git. Also partly through the interviews where being able to hear what drew the subjects to the UI that they use, what they believe to be important in the choice and their thoughts about what was found during the UI analysis. Since we will be able to determine demographics based on the level of proficiency, from the survey. We can use those to find and interview subjects that can represent a certain demographic and discuss their needs and requirements from the user interfaces. Looking at the results from that coupled with the findings from the analysis of Linux CLI tool for Git, SourceTree and Smart Git Hg will lead to a comprehensive answer to the 5th research question that takes the demographics needs and preferences into account.  
-			Our belief is that, by answering questions 1 to 5, developers will get a general overview of how todays Git users interface with Git and why. The "why" doesn't have to be detailed for the information to be valuable because it might be enough to know that, hypothetically, making a commit and pushing code through the graphical user interface is slower than doing the same in the command-line interface.  
+			Our belief is that, by answering questions 1 to 5, developers will get a general overview of how todays Git users interface with Git and why. The "why" doesn't have to be detailed for the information to be valuable because it might be enough to know that, hypothetically, making a commit and pushing code through a graphical user interface is slower than doing the same in the command-line interface.  
 		 
 			\section{Literature review design}
 			In our literature study we used BTH Summon, Engineering Village, IEEE Xplore and Google scholar as our primary search database.\\\\
@@ -428,7 +428,7 @@
 						
 						These questions are aimed at finding out more about what the subject needs and wants from the interface he or she works with. However factors that need to be taken into account when looking at this are how much the subjects knows about the interfaces, what type of work they actually do in Git and if the work is collaborative or not. These factors are covered in either the responses to the survey or the interview it self and will be taken into account in the discussion.
 				\subsection{User interface analysis}
-				The analysis will not be conducted according to any usability metrics or heuristics scale. The analysis will consist of looking at what is possible to do in either of the interfaces, functionality and ability to customize behaviour in order to optimize the way you work with the interface. Since the interfaces are very different and we do not possess the knowledge and tools needed we will not take aesthetics into account. Since the graphical user interfaces and the command-line interface have a basic set of functionality that are going to perform roughly the same tasks we will not take the basic functions into account, like staging, committing, merging, pushing, pulling, cloning and so on.
+				The analysis will not be conducted according to any usability metrics or heuristics scale. The analysis will consist of looking at what is possible to do in either of the interfaces, functionality and ability to customize behaviour in order to optimize the way you work with the interface. Since the interfaces are very different and we do not possess the knowledge and tools needed we will not take aesthetics into account. Since graphical user interfaces and the command-line interface have a basic set of functionality that are going to perform roughly the same tasks we will not take the basic functions into account, like staging, committing, merging, pushing, pulling, cloning and so on.
 				The analysis will be a simple high level overview of the haves and don't-haves of the interfaces, basically a pros and cons list, this in order to stay objective. There are 4 different alternatives that can be designated for a feature, a simple yes or no, and difficult if the action to get a lot of use out of the functionality is complex, and finally partial if the feature is lacking in availability or flexibility compared to the other interfaces or if the feature is useful but limited in its basic form but can become less limited but the action to do so is difficult.\\
 				The reasoning behind adding a research module that looks at some examples of the interfaces is to have more bases covered. In order for us and the readers to get a representative image of what the interfaces are capable of, and what they are not. This information can in turn be used in conjunction with the results from survey-question 8, to see what the demographics may be more reliant on in terms of features and see how the UI examples perform. This in turn will help us build a stronger view of what will benefit the user at different stages of proficiency.
 		
@@ -436,9 +436,9 @@
 		\chapter{Literature review}
 		
 			\section{Command-line versus Graphical user interface}
-			Based on what we found people with experience about Git will in most, if not all cases prefer the command-line interface over the graphical user interface.\\
-			The reason behind this is however, not crystal clear.In the 2012 edition of GitSurvey \cite{GitUserSurvey}, about 97\% of the people who answered the question “What Git implementations do you use?”, use the Git command-line whilst only 8\% use some graphical user interface.\\\\
-			If we go back to a time, before Git. A time when the concept of graphical user interfaces were quite new, there was a study conducted on students to see whether they would prefer the command-line interface over the graphical user interface. A study was done at Waikato University, New Zealand, back in 1992 and involved a mix of Macintoshes and IBM PC compatibles \cite{Treweek}.\\
+			Based on what we found people with experience about Git will in most, if not all cases prefer the command-line interface over a graphical user interface.\\
+			The reason behind this is however, not crystal clear. In the 2012 edition of GitSurvey \cite{GitUserSurvey}, about 97\% of the people who answered the question “What Git implementations do you use?”, use the Git command-line whilst only 8\% use some graphical user interface.\\\\
+			If we go back to a time, before Git. A time when the concept of graphical user interfaces were quite new, there was a study conducted on students to see whether they would prefer the command-line interface over a graphical user interface. The study was done at Waikato University, New Zealand, back in 1992 and involved a mix of Macintoshes and IBM PC compatibles \cite{Treweek}.\\
 			A group of students were placed in front of these machines so that the staff was able to observe how they responded to interacting towards Macintoshes graphical interface and IBM PC compatibles command-line.\\
 			The theory was that the students, whom had no prior computer experience, would prefer the Macintosh because of the fact that a graphical user interface has a less harsh learning curve than a command-line.This theory was also backed up by Morgan, et al \cite{MouseToRat} and Kirkpatrick et al \cite{MacVsWindows}.\\
 			Based on this study and another, more Git-focused study that was conducted in 2014 \cite{GitInClassroom}, the theory seems to be that graphical user interfaces would appeal to novice users more.\\
@@ -450,7 +450,7 @@
 			
 			
 			\section{Summary of the literature study results}
-			The graphical user interfaces that are available for Git is a lot less used than the Git command-line. Results from previous studies shows that people with low experience seem to prefer the graphical user interfaces because they appear to be easier to use. The people that answered the GitSurvey in 2012 was a group of mostly everyday users or more experienced than average users of Git \cite{GitUserSurvey}, so it is hard to judge whether the statement in the line above is valid or not but if you are to believe the previously introduced studies then it would make sense. After looking at the previous studies, we would have to say that command-line interfaces seem to be something that attracts more experienced users whilst graphical user interfaces attracts novice users.
+			The graphical user interfaces that are available for Git is a lot less used than the Git command-line. Results from previous studies shows that people with low experience seem to prefer a graphical user interfaces because they appear to be easier to use. The people that answered the GitSurvey in 2012 was a group of mostly everyday users or more experienced than average users of Git \cite{GitUserSurvey}, so it is hard to judge whether the statement in the line above is valid or not but if you are to believe the previously introduced studies then it would make sense. After looking at the previous studies, we would have to say that command-line interfaces seem to be something that attracts more experienced users whilst graphical user interfaces attracts novice users.
 		
 		% Results	
 		\chapter{Results}
@@ -550,7 +550,7 @@
 				In comparison to 2012's edition of the GitSurvey, 4498 respondents to the question "What Git implementation do you use?" 95\% answered "Git (core) commandline" \cite{GitStructure}.\\	
 				The data makes the command-line interface appear to be the most used interface for Git amongst experienced Git users.
 				However, it important to note that experience users sometimes use both a command-line interface and a graphical user interface.
-				With this in mind, it could be a hint that the users whom use both of the interfaces are missing a feature in the command-line interface that is available in the graphical user interface.
+				With this in mind, it could be a hint that the users whom use both of the interfaces are missing a feature in the command-line interface that is available in graphical user interfaces.
 				Based on the answeres we recieved in our interviews it could very well be that the command-line seem to lack a good visualization of the repository log, something that most graphical user interfaces seem to handle pretty decently.
 				A good visualization of the log in the command-line interface is, and we quote, "difficult to do without breaking your fingers" (Martin Bagge, personal communication, May 11, 2015). % Från intervju - Bagge 
 				\\\\
@@ -573,11 +573,30 @@
 				
 				There is a strong positive correlation between how experienced the respondents are and how many of them that use the CLI, as seen in Figure 5.18.
 				The same does not however apply to the usage of the GUI, because as we can see in Figure 5.19 there's a strong negative correlation which can be interpreted as the more experience the respondents have the less likely they are to use solely a GUI when interfacing with Git. In fact, none of the highly experienced respondents use a GUI solely (Figure 5.10 c).
-				
+				\\
+				Looking at the crosstabulations we can see that a graphical user interface is more used amongst respondents that learnt Git through a friend/colleague or in a course than through a open source community, book, online tutorials or by yourself (Appendix B, Figure B.4).\\
+				In Collaborative work it's more common to use a graphical user interface than working with large scale version control with branch management and code review through Git. About 30\% use a GUI for Basic change tracking and Collaborative work, whilst only 10\% use it for large scale version control with branch management and code review.\\
+				It is important to note that the GUI is used quite often in combination with the CLI, atleast when working with large scale version control with branch management and code review.\\
+				Another interesting thing, shown in Figure B.6 in Appendix B, is that the type of OS does seem to matter in terms of how many that use the CLI/GUI or both.\\
+				In Windows roughly 32\% use a GUI whilst in Mac the number is down to 15,5\% and in Linux 1,5\%.
+				From our point of view we believe that those numbers show a correlation between how GUI based a OS is and what type of UI the users use for Git. In that case, it would mean that there's a quite strong negative correlation.
+				The same thing could be applied for the GUI where as roughly 49\% of the Windows users, 61,9\% of the Mac users and 82\% of the Linux users use a CLI which would suggest a strong positive correlation instead.\\\\			
 				The correlation analysis put together with the results from the interviews - the fact that the CLI does lack visualization of logs but provide a more controlled environment - shows that graphical user interfaces are more attractive amongst novice users than experienced users.
 				But as the users gain experience they seem to swap their GUI for a CLI or to use them both together.\\
 				We think it's safe to say that answering RQ5 is close to impossible, if not impossible.
 				Our guess is that to answer this question you'd probably have to measure the time it takes to perform typical Git actions in both the GUI and the CLI for a large sample group where the level of experience is very uneven. You would probably have to take in a account that they all work with Git in different ways, someone might just use Git as a way to collaborate with colleagues whilst someone else might use it to review code. Their ways of interacting with Git could be very different. Needless to say, the work required to answer this question would most likely take a tremendous amount of time.
+				\\\\
+				Our findings summarized in a list:
+				\begin{itemize}
+					\item The command-line interface is the most widely used interface, amonst all Git users.
+					\item The graphical user interface is used less and less by it's own as the user gains experience.
+					\item The graphical user interface is still used by highly experienced users but only used together with the CLI and not by its own.
+					\item How you learnt Git, what OS you use and what you use Git for - are factors that influence what interface you use. For example, a graphical user interface is much more common amongst Windows users than amongst Mac or Linux users and a graphical user interface is much more common amongst those who learnt Git through a friend/colleague or in a course than amongst those who learnt Git through open source communities or online tutorials.
+					\item The general image, provided by the respondents and based on the analyzed data, is that the CLI has a steeper learning curve but offer more control, than the GUI, and the GUI is helpful and simple but contains a lot of auto-magic.
+					\item Both interfaces have their pros and cons but it's impossible to say which is the better one, it's all a matter of what you use Git for and your prefered taste.
+					\item According to the interviews we've conducted, graphical user interfaces has detailed logs that are easy to browse through - something that the CLI lacks by default.
+					\item The GUI and the CLI has a lot of similarities in terms of functionality, most of the functionality found in the CLI can be found in the GUI such as alias, action customizing and freedom of workflow construction. However, it's hard to say what the exact differences are in terms of convinience and functionality without a proper usability investigation, which is something we didn't have time to do.				 
+				\end{itemize}
 				
 		
 		% Conclusion
@@ -589,7 +608,10 @@
 		When speaking of learning though, a graphical user interface could be considered a less painful way of learning Git, however you probably don't achieve the same type of control and understanding of Git through a GUI than a command-line interface.\\
 		The command-line interface is associated with "control" and "difficult" by the majority of our respondants whilst the GUI is associated with words such as "Simple", "Easy", "Helpful", "Automagic" and "Time consuming".\\
 		It is still hard to argue which of the UIs that are the better one, it would probably depend entirely on how you use Git.\\
-		
+		Our guess as to why the CLI is more used than a GUI is that users wants control and it's hard to offer the same type of control in a GUI as the CLI does.
+		The entire point of having a GUI is to simplify things, so when you press a button in a GUI you might actually trigger ten different actions in the background - actions that you normally would have to perform one by one in a CLI.\\
+		Another thing, that has been mentioned before in the thesis, is that the CLI lacks good visualizations of logs which GUIs seem to do a great job at offering.
+		We believe - based on the data we've collected - that this is why a lot of users use both interfaces, a GUI to get good visualizations of logs and the CLI for control.
 		
 		% Acknowledgment section
 		\chapter*{Acknowledgement}
