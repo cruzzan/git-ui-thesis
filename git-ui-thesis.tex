@@ -464,8 +464,12 @@
 			\end{figure}
 			In Appendix A you can find graphical representations of how the respondents to the survey answered each question, these diagrams show the full spectrum of respondants as a whole. More in-depth graphs with different conditions will follow after that.
 			
+			In Appendix B you can find correlation analysis and crosstabulations that we've managed to put together using IBM SPSS Statistics \cite{SPSS}.\\
+			We've chosen to include a Sig (2-Tailed) value in our correlation analysis to check if there's a statistically significant correlation between the variables we're measuring. Basically if the value is greater than 0.05 there's no statistically significant correlation else if the value is less or equal to 0.05 there is a statistically significant correlation.\\
+			A statistically significant correlation means that a increases or decreases in one of our variables significantly relate to a increases or decreases in our other variable.
+			For example, Appendix B Figure B.1 which has a Sig.(2-tailed) value of 0,016 and therefor shows that there's a statistically significant correlation.\\\\
 			
-			From here we will present different representations that pertain to a certain aspect of the study, these will have different sets of data depending on what demographic we are looking at and the different combinations of answers that are being looked at.
+			Below you'll see what kind of interfaces the different demographic groups use and below that are graphs displaying what interface our respondents started with and what interface they use today.
 			\begin{figure}[H]
 					\centering
 					\begin{subfigure}[b]{0.315\textwidth}
@@ -571,11 +575,11 @@
 				What it interesting though is that 16.9\% swapped over to use both the CLI and a GUI.
 				Meanwhile, if we take a look at the users that started using a graphical user interface about 52\% still use a graphical user interface while 25\% swapped over to the CLI and 22.5\% swapped to both CLI and GUI, see Figure 5.17(b).
 				
-				There is a strong positive correlation between how experienced the respondents are and how many of them that use the CLI, as seen in Figure 5.18.
-				The same does not however apply to the usage of the GUI, because as we can see in Figure 5.19 there's a strong negative correlation which can be interpreted as the more experience the respondents have the less likely they are to use solely a GUI when interfacing with Git. In fact, none of the highly experienced respondents use a GUI solely (Figure 5.10 c).
+				There is a strong positive correlation between how experienced the respondents are and how many of them that use the CLI, as seen in Appendix B Figure B.1.
+				The same does not apply to the usage of the GUI, because as we can see in Appendix B Figure B.2 there's a strong negative correlation which can be interpreted as the more experience the respondents have the less likely they are to use solely a GUI when interfacing with Git. In fact, none of the highly experienced respondents use a GUI solely (Figure 5.10 c).
 				\\
 				Looking at the crosstabulations we can see that a graphical user interface is more used amongst respondents that learnt Git through a friend/colleague or in a course than through a open source community, book, online tutorials or by yourself (Appendix B, Figure B.4).\\
-				In Collaborative work it's more common to use a graphical user interface than working with large scale version control with branch management and code review through Git. About 30\% use a GUI for Basic change tracking and Collaborative work, whilst only 10\% use it for large scale version control with branch management and code review.\\
+				In collaborative work it's more common to use a graphical user interface than working with large scale version control with branch management and code review through Git. About 30\% use a GUI for basic change tracking and collaborative work, whilst only 10\% use it for large scale version control with branch management and code review.\\
 				It is important to note that the GUI is used quite often in combination with the CLI, atleast when working with large scale version control with branch management and code review.\\
 				Another interesting thing, shown in Figure B.6 in Appendix B, is that the type of OS does seem to matter in terms of how many that use the CLI/GUI or both.\\
 				In Windows roughly 32\% use a GUI whilst in Mac the number is down to 15,5\% and in Linux 1,5\%.
@@ -697,6 +701,9 @@
 			
 			\bibitem{OracleCLIAndGUI}
 			Chapter 1 Differences Between Command Line Interface and Graphical User Interface (Solaris Advanced User's Guide). Available: \url{http://docs.oracle.com/cd/E19683-01/806-7612/startup-78447/index.html} [Accessed 10th August 2015].
+			
+			\bibitem{SPSS}
+			IBM SPSS Statistics. Available: \url{http://www-01.ibm.com/software/analytics/spss/products/statistics/} [Accessed 10th August 2015].
 			
 		\end{thebibliography}
 		
@@ -833,25 +840,25 @@
 			\label{fig:High users - common words associated with Git CLI.}
 		\end{figure}	
 		
-		\chapter{Correlation Analysis \& Crosstabs}
+		\chapter{Correlation Analysis \& Crosstabulations}
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-cli.png}
-			\caption{Correlation between experience and usage of the CLI}
+			\caption{Correlation between experience and usage of the CLI. Shows that as experience (in the analysis refered to level) increase the number of CLI users increase. Sig-value of 0.016 which shows a statistically significant correlation.}
 			\label{fig:Correlation between experience and usage of the CLI.}
 		\end{figure}
 		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-gui.png}
-			\caption{Correlation between experience and usage of the GUI}
+			\caption{Correlation between experience and usage of the GUI. Shows that as experience (in the analysis referd to as level) increases the number of GUI users decreases. Sig-value of 0.128 which shows that there is no statistically significant correlation.}
 			\label{fig:Correlation between experience and usage of the GUI.}
 		\end{figure}
 		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-both.png}
-			\caption{Correlation between experience and usage of both the CLI and GUI}
+			\caption{Correlation between experience and usage of both the CLI and GUI. Shows that as experience (in the analysis refered to as level) increases the number of users, that use both a GUI and the CLI, increases. Sig-value of 0.128 which shows that there is no statistically significant correlation.}
 			\label{fig:Correlation between experience and usage of both the CLI and GUI.}
 		\end{figure}
 		
