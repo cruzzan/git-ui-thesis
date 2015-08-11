@@ -394,7 +394,9 @@
 				
 					\subsubsection*{Analysis of survey}
 					The survey is crafted so that it can be evaluated and analysed in conjunction with the interviews. 
-					First a demographic for the replying party will be determined based on their answers to questions one and two. This demographic will be used when looking at the questions about what user interface they use and have used, their reasoning for using it and their perceptions of the user interfaces. The demographic is necessary to determine since the fifth research question is based on both experienced and inexperienced users.
+					First a demographic for the replying party will be determined based on their answers to questions one and two. This demographic will be used when looking at the questions about what user interface they use and have used, their reasoning for using it and their perceptions of the user interfaces. The demographic is necessary to determine since the fifth research question is based on both experienced and inexperienced users.\\
+					We made crosstabulations between what OS the respondents use/how they learnt Git/what they use Git for and what interface they are using now. Though we didn't feel like the crosstabulations was enough, so we made correlation analyzes between experience with Git and what interface the respondents use.\\
+					The crosstabulations and the correlation analyzes can be found in Appendix B.
 					\\
 					Questions three and five will be directly used to determine the answer to the first research question and in conjunction with the determined demographic to answer the second research question.
 					\\
@@ -415,7 +417,8 @@
 				\end{itemize}
 					\subsubsection*{Interview format}
 					The format of the interviews will be a discussion on the topic of this paper where the aim is to get the subjects to explain their standing on the issue of CLI v. GUI in Git interaction, and most of all elaborate around perceptions and experiences that they have. We will also supply some information about the UI:s to allow the sessions to go into as much detail as possible. 
-					We conducted 3 interviews with subjects from both of the above mentioned groups and one with a user with an indicated level of knowledge to be in between the two groups. The sessions were recorded and transcribed later to minimize the loss of information that would occur if we only took notes during the interviews.
+					We conducted 3 interviews with subjects from both of the above mentioned groups and one with a user with an indicated level of knowledge to be in between the two groups. The sessions were recorded and transcribed later to minimize the loss of information that would occur if we only took notes during the interviews.\\
+					At the end we carried out a small quality analysis of the results.
 					
 					\subsubsection*{Questions and topics to discuss}
 						\begin{itemize}
@@ -882,5 +885,36 @@
 			\caption{A crosstabulation showing what OS respondents use and what interface they are using.}
 			\label{fig:crosstabulation - what interface they are using x what OS they use.}
 		\end{figure}
+		
+		\chapter{Quality Analysis of interviews}
+		\subsection{Bagge}
+		The command that the respondent uses the most is git grep, a command that the respondent is unsure about if it exists in a GUI.
+		
+		The respondent has used graphical user interfaces in the past, but it would appear as if it doesn’t occur that often. But he knows about tortoiseGit and GitK, he also talks a little bit about tig. So it’s safe to say that he has some knowledge about what’s out there in terms of GUIs.
+		
+		The respondent also explains why he’s not working in a GUI environment by talking about the fact that he doesn’t have a workflow for it so he doesn’t really know what to do.
+		
+		When talking about tig, he mentions that the CLI lacks a visualization of the log. He also mentions that you could create your own visualization of the log in a CLI but that it’s hard to do.
+		
+		When asked how he feels about working using the CLI in comparison to a GUI, he says that the CLI feels like home. It is in the CLI where he does his works.
+		
+		
+		\subsection{Bjorner}
+		The respondent mainly uses Git for branch managing and has used a GUI quite often in the past. He thinks that the GUI is great for log visualizations, he thinks that he can easily get a good overview of the repository history. He uses the CLI as his primary interface.
+		
+		The respondent believes that the GUI is a good starting point for new Git users that aren’t used to working in a CLI.
+		
+		He, himself, is very comfortable working in the CLI because it provides a feeling of control.
+		
+		The respondent doesn’t think that he gains anything by using a GUI when working alone but feels that it’s useful when working together with someone else when - for example - browsing through repository history.
+		
+		
+		\subsection{Eliasson}
+		The main functionality the respondent uses is the git clone command, to clone repositories.
+		He does not have much experience with working with GUIs, he primarily uses a CLI.
+		
+		The respondent does not have much experience working with a CLI either, but feels like it’s hard to tell when something goes wrong when using a CLI.
+		He says that; going from a GUI to a CLI is a little bit wierd, you don’t always keep track of where you are (assumingly where you are in terms of Git events, directories etc.).
+		So one thing he misses from the GUI is some kind of indication of where he is and what he’s doing in the CLI.
 		
 \end{document}
