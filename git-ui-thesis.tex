@@ -395,7 +395,9 @@
 				
 					\subsubsection*{Analysis of survey}
 					The survey is crafted so that it can be evaluated and analysed in conjunction with the interviews. 
-					First a demographic for the replying party will be determined based on their answers to questions one and two. This demographic will be used when looking at the questions about what user interface they use and have used, their reasoning for using it and their perceptions of the user interfaces. The demographic is necessary to determine since the fifth research question is based on both experienced and inexperienced users.
+					First a demographic for the replying party will be determined based on their answers to questions one and two. This demographic will be used when looking at the questions about what user interface they use and have used, their reasoning for using it and their perceptions of the user interfaces. The demographic is necessary to determine since the fifth research question is based on both experienced and inexperienced users.\\
+					We made crosstabulations between what OS the respondents use/how they learnt Git/what they use Git for and what interface they are using now. Though we didn't feel like the crosstabulations was enough, so we made correlation analyzes between experience with Git and what interface the respondents use.\\
+					The crosstabulations and the correlation analyzes can be found in Appendix B.
 					\\
 					Questions three and five will be directly used to determine the answer to the first research question and in conjunction with the determined demographic to answer the second research question.
 					\\
@@ -416,7 +418,8 @@
 				\end{itemize}
 					\subsubsection*{Interview format}
 					The format of the interviews will be a discussion on the topic of this paper where the aim is to get the subjects to explain their standing on the issue of CLI v. GUI in Git interaction, and most of all elaborate around perceptions and experiences that they have. We will also supply some information about the UI:s to allow the sessions to go into as much detail as possible. 
-					We conducted 3 interviews with subjects from both of the above mentioned groups and one with a user with an indicated level of knowledge to be in between the two groups. The sessions were recorded and transcribed later to minimize the loss of information that would occur if we only took notes during the interviews.
+					We conducted 3 interviews with subjects from both of the above mentioned groups and one with a user with an indicated level of knowledge to be in between the two groups. The sessions were recorded and transcribed later to minimize the loss of information that would occur if we only took notes during the interviews.\\
+					At the end we carried out a small quality analysis of the results.
 					
 					\subsubsection*{Questions and topics to discuss}
 						\begin{itemize}
@@ -513,8 +516,12 @@
 				
 				
 			\section{Interviews}
-			The interviews were conducted with three subjects, each interview lasted approximately 5-15 minutes. It was found that the demographic of low amounts of Git proficiency needed a little help along to understand the questions and to elaborate on the answers. The help was given in an objective way in order to not lessen the value of the responses or skew the image in their mind, the more experienced we're a little bit more talkative and had more to say on the subject since they have had the time to test other solutions and options. 
-			The full transcripts of the interviews can be found in appendix %TODO Add the acctual denominators for the interview appendixes.
+			The interviews were conducted with three subjects, each interview lasted approximately 5-15 minutes. 
+			The more experienced subjects were a little bit more talkative and had more to say on the subject since they have had the time to test other solutions and options, whilst the less experienced subject didn't quite understand all of the questions so we had to try and explain what we ment by them in a objective way as best we could.
+			By "in a objective way" - we mean that we avoided positive or negative words that could have influenced the subjects respond.
+			A quality analysis has been carried out and the results can be found in Appendix C.
+			The full transcripts, in Swedish, of the interviews can be found in Appendix D. The reason of why the transcripts are in Swedish is that the interviews were carried out in Swedish, we felt that a translation could potentially damage the content and therefor we decided not to do it.\\
+			
 			%\section{User interface analysis}
 			%	\begin{center}
 			%		\begin{tabular}{ | p{5cm} | c | c | c | }
@@ -557,7 +564,7 @@
 				However, it important to note that experience users sometimes use both a command-line interface and a graphical user interface.
 				With this in mind, it could be a hint that the users whom use both of the interfaces are missing a feature in the command-line interface that is available in graphical user interfaces.
 				Based on the answeres we recieved in our interviews it could very well be that the command-line seem to lack a good visualization of the repository log, something that most graphical user interfaces seem to handle pretty decently.
-				A good visualization of the log in the command-line interface is, and we quote, "difficult to do without breaking your fingers" (Martin Bagge, personal communication, May 11, 2015). % Från intervju - Bagge 
+				A good visualization of the log in the command-line interface is, and we quote, "difficult to do without breaking your fingers" (Bagge, personal communication, May 11, 2015). % Från intervju - Bagge 
 				\\\\
 				If we take a closer look on what can be gained from the GUI and the CLI we can see that the GUI seem to have the same type of functionality as a CLI for Git in most cases, according to the results in our user interface analysis.\\
 				"What can be gained from using the GUI" is a question that is hard to answer, simply because there are a number of different GUI's available and their functionality therefor naturally differs.
@@ -567,7 +574,7 @@
 				That's what the buttons are there for.
 				
 				Even though the CLI appear to be difficult to new users, see Appendix A Figure A.10, our results claim that it offers more control. The "control"-part seems to be something that all usergroups agree on, see Appendix A Figure A.10, A.12 and A.14.
-				However, as explained by one of the people we interviewed, a graphical user interface might perform multiple commands when you press one button. This would naturally make it harder to actually understand which commands are executed when a button is pressed (Niclas Björner, personal communication, May 11, 2015). % Bjorner
+				However, as explained by one of the people we interviewed, a graphical user interface might perform multiple commands when you press one button. This would naturally make it harder to actually understand which commands are executed when a button is pressed (Bjorner, personal communication, May 11, 2015). % Bjorner
 				On the contrary, in the CLI you have, unless you've created your own aliases, to type commands manually.
 				This leads to us believing that the CLI would provide a better understanding of how Git works in general than a GUI, even though it would require a steeper learning curve.
 				%RQ5 START
@@ -884,4 +891,129 @@
 			\label{fig:crosstabulation - what interface they are using x what OS they use.}
 		\end{figure}
 		
+		\chapter{Quality Analysis of interviews}
+		\subsection{Bagge}
+		The command that the respondent uses the most is git grep, a command that the respondent is unsure about if it exists in a GUI.
+		
+		The respondent has used graphical user interfaces in the past, but it would appear as if it doesn’t occur that often. But he knows about tortoiseGit and GitK, he also talks a little bit about tig. So it’s safe to say that he has some knowledge about what’s out there in terms of GUIs.
+		
+		The respondent also explains why he’s not working in a GUI environment by talking about the fact that he doesn’t have a workflow for it so he doesn’t really know what to do.
+		
+		When talking about tig, he mentions that the CLI lacks a visualization of the log. He also mentions that you could create your own visualization of the log in a CLI but that it’s hard to do.
+		
+		When asked how he feels about working using the CLI in comparison to a GUI, he says that the CLI feels like home. It is in the CLI where he does his works.
+		
+		
+		\subsection{Bjorner}
+		The respondent mainly uses Git for branch managing and has used a GUI quite often in the past. He thinks that the GUI is great for log visualizations, he thinks that he can easily get a good overview of the repository history. He uses the CLI as his primary interface.
+		
+		The respondent believes that the GUI is a good starting point for new Git users that aren’t used to working in a CLI.
+		
+		He, himself, is very comfortable working in the CLI because it provides a feeling of control.
+		
+		The respondent doesn’t think that he gains anything by using a GUI when working alone but feels that it’s useful when working together with someone else when - for example - browsing through repository history.
+		
+		
+		\subsection{Eliasson}
+		The main functionality the respondent uses is the git clone command, to clone repositories.
+		He does not have much experience with working with GUIs, he primarily uses a CLI.
+		
+		The respondent does not have much experience working with a CLI either, but feels like it’s hard to tell when something goes wrong when using a CLI.
+		He says that; going from a GUI to a CLI is a little bit wierd, you don’t always keep track of where you are (assumingly where you are in terms of Git events, directories etc.).
+		So one thing he misses from the GUI is some kind of indication of where he is and what he’s doing in the CLI.
+		
+		\chapter{Transcripts of the interviews}
+		\subsection{Bagge}
+		\textbf{sebastian:} Vilken funktionalitet använder du oftast? eller vilka funktionaliteter är det du vanligtvis använder?
+		\\\textbf{respondent:} Gissningsvis är det kommandot som jag mest använder git grep.
+		\\\textbf{sebastian:} Git grep?
+		\\\textbf{respondent:} Ja, för att leta i källkoden liksom efter någonting.
+		\\\textbf{sebastian:} Men det git grep är ingenting som egentligen finns tillgängligt i grafiska gränssnitt, va?
+		\\\textbf{respondent:} Oj, det har jag ingen aning om.
+		\\\textbf{respondent:} Det hade ju varit rätt praktiskt om jag öppnade min källkod i en sån källkodsbrowser-grej, för det blir det ju i det fallet, så skulle jag ju kunna tänka mig göra grep i den liksom.
+		\\\textbf{sebastian:} Hur upplever du att det är att arbeta med ett grafiskt interface emot Git? Jag gissar att du har gjort det någon gång åtminstone.
+		\\\textbf{respondent:} Ja, det händer ju. Det beror ju lite på vad man lägger det emot förstås. Men om man tar dem strikt grafiska typ tortoiseGit och GitK och…
+		\\\textbf{sebastian:} SourceTree?
+		\\\textbf{respondent:} Det har jag aldrig hört talas om, eller har hört talas om det men aldrig använt det. Det är väll egentligen tortoiseGit och GitK som jag använt.
+		Sen har man dem som är borderline typ tig, som är ganska så trevligt när man gör vissa grejer.
+		Jag kan egentligen inte arbeta i dom (grafiskt interface mot Git), är väll det rent praktiska i det.
+		\\\textbf{sebastian:} Okej, på vilket sätt?
+		\\\textbf{respondent:} Jag har inget arbetsflöde för det så jag vet inte hur jag ska göra. Så jag har använt det någon gång då och då för att titta på olika saker av olika skäl.
+		Det är inget för mig.
+		Tig har jag använt för att den har någon visualisering av loggen som är helt underbar liksom.
+		Men det va längesen jag använde det senast. Så på något vis har jag väll inte behövt det, det är väll typ när man ska ner i loggen och leta långt bak och så ska man försöka förstå hur det hänger ihop så har den ett litet läge för att visa loggen med olika bakgrunder med histogram och sånt. Så att den har en funktion där som saknas lite på kommandoraden, eller den är svår att göra på kommandoraden utan att knäcka fingrarna.
+		\\\textbf{sebastian:} Nästa fråga då, ur upplever du att det är att arbeta med ett CLI emot Git?
+		\\\textbf{respondent:} Det är där jag bor liksom, jag jobbar med kommandoradsprylar. I det som jag producerar på jobbet så är det ju kommandoradsprylar. Att då jobba i kommanrodaden känns då som.. det vore lite löjligt att sitta och skriva kommandoradsprogram och sen jobba på ett annat sätt.
+		Eftersom jag ändå sitter i en terminal när jag ändå ska prova koden så varför ska jag inte göra Git kommandon där i samma terminal. Någonstans där finns det en connection. 
+		Sen förövrigt så finns det ett flöde där som jag har vant mig vid.
+		\\\textbf{sebastian:} Vad saknar du ifrån ett GUI som du skulle vilja ha möjlighet att använda i ett CLI?
+		\\\textbf{respondent:} Det finns ju en grej som jag saknar när det kommer till loggen som jag egentligen inte tycker finns i någon utav dem som jag har provat.
+		Det är att om jag vill titta på loggen så vill jag smidigt kunna följa ändringarna och sånt och det är komplicerat. Det är ju egentligen för att Git är byggt så som det är med förändringarna och sånt, så det är nog komplicerat att skriva ett kompetent UI oavsett vilken väg man väljer.
+		Om du har den här ändringen kan du visa allt som har med den att göra med en snygg kedja som blir logisk för människohjärnan, för tyvärr är det ju så att göra det datalogiskt med hur dom hänger ihop är ju inte så komplicerat men det är inte så dom hänger ihop för mig som människa när jag tittar på ändringarna. Så ändringar kan komma fel, rent strukturellt, i mitt huvud jämfört med hur dom händer i trädet.
+		Det finns en önskan om att loggen kanske kunde varit lite mer tillgänglig.
+		\\\textbf{sebastian:} Finns det någon tidsaspekt som du skulle kunna optimera om du hade ett grafiskt gränssnitt istället för ett CLI?
+		\\\textbf{respondent:} svaret är nej, för min del. Jag sitter aktivt och skriver raderna, men jag är ganska snabb på det för att jag vet vilken ordning allt ska vara i.
+		\\\textbf{sebastian:} Ja, det är väll muskelminne vid det här laget.
+		\\\textbf{respondent:} Ja.
+		\\\textbf{sebastian:} Som summering på sista frågan så kan man säga att du har en del alias, du har tre totalt.
+		\\\textbf{respondent:} Ja, det är dom som jag använder iallafall.
+		\\\textbf{sebastian:} Som gör dig lite smidigare, även om ett utav dom åtminstone är inte att rekommendera. Det är det du tycker gör saker och ting lättare och du saknar ingenting annat ifrån Guit.
+		\\\textbf{respondent:} Nej, inte medvetet iallafall.
+		\\\textbf{sebastian:} Förutom just då Tig-grejerna.
+		\\\textbf{respondent:} Ja, på sätt och vis så skulle det kunna vara så att jag har ju inte använt det så jag vet ju inte.
+		
+		
+		
+		
+		\subsection{Bjorner}
+		\textbf{sebastian:} Vilken funktionalitet i Git anser du att du jobbar med oftast, eller vilka funktionaliteter arbetar du mest med?
+		\\\textbf{respondent:} Jag skulle väll säga att jag för det mesta arbetar, just inom Git, med branchning för att lätt kunna experimentera loss i projekt jag sitter i utan att behöva ta sönder någonting i master.
+		Jag använder det för att kunna ha en egen kopia utav våran källkod på jobbet, som jag arbetar med, utan att jag stör någon annan. Att, ja, implementera.
+		\\\textbf{sebastian:} Så branchmanagement i Git är det du pysslar med mest?
+		\\\textbf{respondent:} Ja, om man ändå bortser från det vanliga med commits.
+		\\\textbf{sebastian:} Hur upplever du att arbeta med ett GUI? Hur ser du på arbetet med det?
+		\\\textbf{respondent:} Jag har själv kört en del GUIn till Git. Inte så mycket GitGTK som är det vanliga, som man får med Git utan jag har använt SoureTree som är skapat av Atlassian.
+		Jag tycker att GUIn är väldigt bra för att notera data, så du får snabbt en bra överblick över hur t.ex. hur ser din historik i Git. Du får data presenterat på ett väldigt vänligt sätt i GUIt, tycker jag överlag.
+		\\\textbf{sebastian:} Är det någonting mer du vill tillägga på GUI delen?
+		\\\textbf{respondent:} Ja, asså om man ska kolla på det hela så även med lite mer avancerade verktyg som har en terminalsida till det så tror jag att GUIn är en väldigt bra inkörningsport om man inte är så bekväm vid att sitta i en terminal.
+		\\\textbf{sebastian:} Samma fråga, fast riktat mot CLI.
+		\\\textbf{respondent:} Ja, jag trivs väldigt bra i terminalen för det känns som att jag har mycket mer kontroll över vad som händer i och med att verktygen ofta automatiserar långa kedjor utav kommandon baserat på vart du trycker. Om du trycker på en knapp så kan det vara fem eller sex kommandon som exekveras i ett GUI medans här får man göra allting verkligen för hand.
+		Det kan ta mycket längre tid, det kan ta kortare tid beroende på hur van man är. Men jag känner att jag har mer kontroll i terminalen.
+		\\\textbf{sebastian:} Vad saknar du, om något, i det gränssnitt som du använder idag? Jag gissar på att det är CLI du använder idag?
+		\\\textbf{respondent:} Jajamen, det är det. Det jag saknar är väll lite som jag pratade om när jag pratade GUI, att snabbt kunna få en bra visuell representation utav saker. Jag kan inte, ur ren standard, få en bra representation utav min historik utan att kunna massa specialkommandon i Git tillexempel.
+		\\\textbf{sebastian:} Så dem grafiska egenskaperna är något som du känner gör arbetet med det mer lättar att hantera och lite effektivare?
+		\\\textbf{respondent:} Det beror helt på, om jag sitter själv och jobbar så tycker jag inte riktigt att det riktigt tjänar mig någonting att ha något grafiskt.
+		Men om man ska sitta tillsammans med någon och kanske förklara någonting eller gå igenom en historik, då känner jag att det är mycket lättare att ha ett grafiskt gränssnitt att arbeta igenom.
+		
+		
+		
+		\subsection{Eliasson}
+		\textbf{Sebastian:} Vilken funktionalitet i Git är det du använder oftast, vilken eller vilka?
+		\\\textbf{Respondent:} Det är mestadels för att klona grejer som andra har gjort.
+		\\\textbf{Sebastian:} Så bara hämta källkod för att kolla på?
+		\\\textbf{Respondent:} Ja.
+		\\\textbf{Sebastian:} Hur upplever du att det är att arbeta med Guit eller någon utav Guina som finns tillgänliga för Git?
+		\\\textbf{Respondent:} Jag har ju inte jobbat mycket alls med Guit, men det har ju varit bra hittills.
+		\\\textbf{Sebastian:} Är det någonting du tycker är extra trevligt i Guina eller extra kasst i Guina, som du har märkt.
+		\\\textbf{Respondent:} Nej, jag kan nog inte säga det.
+		\\\textbf{Sebastian:} Då går vi vidare till samma fråga fast för kommandoraden.
+		\\\textbf{Respondent:} Det har funkat bra, i och med att jag inte har använt det så mycket så har jag svårt att säga vad som är problematiskt. Man måste sitta lite med grejer för att märka av att det inte riktigt funkar som jag vill. Det är svårt att utmärka problem.
+		\\\textbf{Sebastian:} Det är ju problem ifrån din synvinkel, det ska inte vara buggar i systemet. Utan hur du uppfattar det.
+		\\\textbf{Respondent:} Nej, det förstår jag. Men jag har inte använt det tillräckligt mycket, känner jag.
+		\\\textbf{Sebastian:} Är det någonting du tycker är extra svårt, som typ branchhantering eller commithantering eller rebase?
+		\\\textbf{Respondent:} Det jag känner framför allt är att jag är ovan att skriva det på det sättet, men hittills har det funkat bra.
+		\\\textbf{Sebastian:} Hur mycket erfarenhet har du haft av kommandoraden tidigare innan du började använda Git?
+		\\\textbf{Respondent:} Jag läste ju Linux på gymnasiet.
+		\\\textbf{Sebastian:} De var en kurs eller?
+		\\\textbf{Respondent:} Det var en kurs, jag läste den cirka en termin. Om jag inte kommer ihåg helt fel så var jag rätt intresserad tillochmed. Men man tappar det snabbt, tyvärr.
+		\\\textbf{Sebastian:} Jo, så blir det tyvärr. När man inte jobbar med det mycket så försvinner det ganska fort. Men det är det rättvist att säga att du inte är jättevan vid att använda terminaler och sånt?
+		\\\textbf{Respondent:} Det börjar komma tillbaka, men jag är fortfarande ovan.
+		\\\textbf{Sebastian:} Vad saknar du, om något, i gränssnittet som du använder idag? Alltså vad saknar du i CLI:t för att bli mer effektiv, för att vara smidigare att använda, för att göra saker och ting lättare för dig i utveckling och arbetet med Git?
+		\\\textbf{Respondent:} Från ett GUI till en kommandorad blir lite sådär små konstigt, man håller inte hela tiden koll på vart man är och så. Det är framför allt det jag känner att jag saknar, att jag vill ha någonting som indikerar vart jag är någonstans hela tiden.
+		\\\textbf{Sebastian:} Ja, precis. För man tappar bort sig litegranna ibland.
+		\\\textbf{Respondent:} Ja.
+		\\\textbf{Sebastian:} Jag gissar på att du inte har hållit på någonting med changeloggar och grafer och såntdär än?
+		\\\textbf{Respondent:} Nej.
+		
+
 \end{document}
