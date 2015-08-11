@@ -407,14 +407,16 @@
 					
 				
 				\subsection{Interviews}
-				The interviews are conducted with a small group of subjects that are representative of a certain demographic that answer the survey. The way that a demographic is determined in this context is the level of proficiency with Git that the subject indicates and how long the subject has been using Git for. 
-				These two aspects will allow analysis on a deeper level, of the needs and wants of different user groups. The minimum demographics to cover are new users of Git whom are learning to use Git at the moment and experienced users whom have used Git often and for a long time. The identifiers for these two groups are;
+				The interviews was conducted with a small group of subjects that were representative of the different demographs that answered the survey. The way that we determined a demographic in this context was the level of proficiency with Git that the subject indicates they had and how long the subject had been using Git for. 
+				These two aspects allowed analysis on a deeper level, of the needs and wants of different user groups. The minimum demographics to cover are new users of Git whom was learning to use Git at the moment and experienced users whom had used Git often and for a long time. The identifiers for these two groups are;
 				\begin{itemize}
 					\item[Group 1 - New users.]
 					These users have less than one year of experience and identify them selves as Novice or Amateur users.
 					\item[Group 2 - Experienced users.]
 					These users have more than two years of experience and identify them selves as Pro or Master users.
 				\end{itemize}
+				There are no clear guidelines that we've followed in the creation of these groups, it was based on common logic by us. It seemed like a logical approach to assume that a user either has experience with Git or a user doesn't, which is how we categorized them into Group 1 and 2.
+				
 					\subsubsection*{Interview format}
 					The format of the interviews will be a discussion on the topic of this paper where the aim is to get the subjects to explain their standing on the issue of CLI v. GUI in Git interaction, and most of all elaborate around perceptions and experiences that they have. We will also supply some information about the UI:s to allow the sessions to go into as much detail as possible. 
 					We conducted 3 interviews with subjects from both of the above mentioned groups and one with a user with an indicated level of knowledge to be in between the two groups. The sessions were recorded and transcribed later to minimize the loss of information that would occur if we only took notes during the interviews.\\
@@ -516,8 +518,8 @@
 				
 			\section{Interviews}
 			The interviews were conducted with three subjects, each interview lasted approximately 5-15 minutes. 
-			The more experienced subjects were a little bit more talkative and had more to say on the subject since they have had the time to test other solutions and options, whilst the less experienced subject didn't quite understand all of the questions so we had to try and explain what we ment by them in a objective way as best we could.
-			By "in a objective way" - we mean that we avoided positive or negative words that could have influenced the subjects respond.
+			The more experienced subjects were a little bit more talkative and had more to say on the subject since they have had the time to test other solutions and options, whilst the less experienced subject didn't quite understand all of the questions so we had to try and explain what we ment by them in an objective way - as best as we could.
+			By "in an objective way" - we mean that we avoided positive or negative words that could have influenced the subjects respond.
 			A quality analysis has been carried out and the results can be found in Appendix C.
 			The full transcripts, in Swedish, of the interviews can be found in Appendix D. The reason of why the transcripts are in Swedish is that the interviews were carried out in Swedish, we felt that a translation could potentially damage the content and therefor we decided not to do it.\\
 			
@@ -562,10 +564,9 @@
 				The data makes the command-line interface appear to be the most used interface for Git amongst experienced Git users.
 				However, it important to note that experience users sometimes use both a command-line interface and a graphical user interface.
 				With this in mind, it could be a hint that the users whom use both of the interfaces are missing a feature in the command-line interface that is available in graphical user interfaces.
-				Based on the answeres we recieved in our interviews it could very well be that the command-line seem to lack a good visualization of the repository log, something that most graphical user interfaces seem to handle pretty decently.
+				Based on the answers we recieved in our interviews it could very well be that the command-line seem to lack a good visualization of the repository log, something that most graphical user interfaces seem to handle pretty decently.
 				A good visualization of the log in the command-line interface is, and we quote, "difficult to do without breaking your fingers" (Bagge, personal communication, May 11, 2015). % Från intervju - Bagge 
 				\\\\
-				If we take a closer look on what can be gained from the GUI and the CLI we can see that the GUI seem to have the same type of functionality as a CLI for Git in most cases, according to the results in our user interface analysis.\\
 				"What can be gained from using the GUI" is a question that is hard to answer, simply because there are a number of different GUI's available and their functionality therefor naturally differs.
 				For example, aliases and customizing actions was possible in SourceTree but not SmartGit Hg, it's hard to say whether or not it's something that is common amongst GUI's but it does confirm that it exists in atleast one GUI.
 				One thing that do appear to be a common phenomenon in graphical user interfaces is the visualisation of the log.
@@ -623,6 +624,14 @@
 		The entire point of having a GUI is to simplify things, so when you press a button in a GUI you might actually trigger ten different actions in the background - actions that you normally would have to perform one by one in a CLI.\\
 		Another thing, that has been mentioned before in the thesis, is that the CLI lacks good visualizations of logs which GUIs seem to do a great job at offering.
 		We believe - based on the data we've collected - that this is why a lot of users use both interfaces, a GUI to get good visualizations of logs and the CLI for control.
+		
+		\chapter{Risks}
+		There are obvious risks such as people might have filled in the survey more than once. We tried to minimize the risk of that by deleting duplicated entries once all the data was placed in a database based on the respondents email adresses, but since there is an option to not submit the survey with an email adress there is a risk that someone might have messed with the results.\\
+		Speaking of the interviews on the other hand, the fact that one of our subject didn't have a lot of experience with Git could potentially be a risk as well seeing as we had to explain our questions further at some points which might influence his answer in a way that it shouldn't.
+		
+		\chapter{Future work}
+		It would be interesting to see a complete user interface investigation to see what the actual differences are between the CLI and a GUI. Maybe put a focus on either time consumtion when performing certain actions or a focus on customization of actions.\\
+		Another thing that would be interesting to find out is if there's any milestone, speaking of experience of Git, at which most users swap their interface for another.
 		
 		% Acknowledgment section
 		\chapter*{Acknowledgement}
