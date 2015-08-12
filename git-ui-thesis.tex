@@ -113,9 +113,11 @@
 		\begin{changemargin}{+1cm}{+1cm}
 			\noindent
 				A lot of us have encountered the talk about which of the CLI and the GUI that is the better one in terms of interfacing with Git.
-				This thesis is an attempt to find out what the most popular interface for Git is, GUI or CLI, and find out the pros and cons of the two depending on users experience with Git.\\
-				We have collected data through a survey and interviews.\\
-				Based on our results we've found that the CLI is the more popular option in general amongst Git users and the usage of GUIs drops - or is used together with the CLI - as a user gains more experience with Git.
+				This thesis is an attempt to find out which UI new Git users prefer for Git and what experienced Git users prefer.\\
+				We aimed to find out if there's anything significant that can be gained from using either of the interfaces in comparison to each other. Lastly we tried to answer the question "At what stage of Git proficiency would you stand to gain the most from the CLI or the GUI?".\\
+				We have collected data through a survey, which yielded approximately 370 responses, and three interviews.\\
+				Based on our results we've found that the CLI is the more popular UI, in general, amongst Git users.
+				\\We've also found that most users stops using GUIs, as their primary UI, as they get more experience with Git. They usually change their primary UI to a CLI or starts to use both a GUI and a CLI together.
 				Our theories of why are presented in this thesis.
 				
 
@@ -141,19 +143,20 @@
 		
 		% Content
 		\chapter{Introduction}
-		Git is a very popular version control system out there today along with systems like SVN and Mercurial. And the discussions between using CLIs' (Command-line interfaces) or GUIs' (Graphical user interfaces) in general have been going on since the late 70's and early 80's when operating systems like the Lisa and Macintosh among others came out \cite{HistoryOfGUIWiki} and the GUI revolution was kicked into high gear.
+		Git is a very popular version control system out there today, along with version control systems like SVN and Mercurial. The discussions between using CLIs' (Command-line interfaces) or GUIs' (Graphical user interfaces), in general, have been going on since the late 70's and early 80's when operating systems like the Lisa and Macintosh among others came out \cite{HistoryOfGUIWiki} and the GUI revolution was kicked into high gear.
 		To date people seem to prefer the CLI over GUI when working with Git, however it is not clear as to why.
 		Theories do exist which state that the CLI provides a faster and more controlled way of dealing with Git. \cite{GitUserSurvey}\cite{GitInClassroom}
 		\\
-		The reason this topic was thought of in the first place is due to an observation made in one of our classes. As of the day of writing there is no real formal introduction course to version control at Blekinge Institute of Technology, much less to Git. So instead there are a small number of courses where students are introduced to Git alongside the actual content of the course and most of the learning is left to what the student chooses to find out.
+		The reason this topic was thought of in the first place is due to an observation made in one of our classes. As of the day of writing there is no real formal introduction course to version control at Blekinge Institute of Technology, much less to Git. So instead there are a small number of courses where students are introduced to Git alongside the actual content of the course and most of the learning is left to what the student chooses to find out.\\
 		During one of these introduction talks about Git the students were encouraged to start out by using the command-line interface in order to get a feel for how Git works. This was met by a lot of complaining from the students as they would rather use a graphical user interface. The subsequent discussion that ensued was the spark that lit the idea to do this research.
 		\\
-		In this paper a closer look is taken into what people use today, in terms of interfaces to work with Git, and if there's any correlation to be found between how people use Git and which interface is used to do so.
-		The aim is to find out which interface is more preferred, which is more suitable to novice users and if developers can benefit more from using either of the two interfaces when reaching a certain knowledge-level of Git.
+		In this paper we've taken a closer look into what people use today, in terms of interfaces to work with Git, and if there's any correlation to be found between how people use Git and which interface they used.
+		The aim was to find out which interface is more preferred, which is more suitable to novice users and if developers can benefit more from using either of the two interfaces when reaching a certain knowledge-level of Git.\\
 		To find these answers we have conducted a survey, through an online service, that has been sent out to developers within the industry and students at Blekinge Institute of Technology.
 		A literature study has been carried out as well, mainly to help  gather as much knowledge about current opinions within the scientific scene about the CLI and GUI interfaces.
-		The results of the literature study enabled the creation of a  survey and after further development of the questions, used in the survey, a small number of interviews were conducted to get a deeper understanding of the choices made.
-		We felt that a survey might provide enough information to carry out the work but by conducting interviews too a better understanding could actually be reached as to why the participants, of the survey, answered the way that they did.
+		The results of the literature study gave us clues about which UI we could expect to be more prefered amongst Git users and why. Thanks to those clues we could develop questions that would provide us with relevant data.\\
+		Three interviews were conducted to get a deeper understanding of the answers that were gathered through the survey.
+		We felt that a survey could possibly provide enough information to carry out the work but by conducting interviews there was a greater chance of understanding as to why the participants, of the survey, answered the way that they did.
 		
 		% Background
 		\chapter{Background}
@@ -199,7 +202,7 @@
 			\begin{itemize}
 				\item Demographic - The word demographic is used in this thesis and refers to a certain group that answered our survey. The groups members are defined by their indicated level of proficiency with Git, and the amount of time they have worked with Git. The determination of which demographic a respondent falls in is made up of a point system. The alternatives are given an arbitrary point value to signify rank and when the points for the chosen alternatives are added up we get the sum for the respondent. Low is defined as 2-4, mid 5-7 and high 8-9. We did this in order to make it possible to split the respondents into demographics.
 				\item VCS - A VCS is a system that records changes to a file or a set of files over time so that you can recall specific versions later.
-				There are 3 different types of version control systems; Local Version Control Systems, Centralized Version Control Systems and Distributed Version Control Systems.\\
+				There are three different types of version control systems; Local Version Control Systems, Centralized Version Control Systems and Distributed Version Control Systems.\\
 				Since Git is a Distributed Version Control System and this thesis concerns Git - you can safely assume that we talk about the Distributed Version Control System when we say Version Control System.\cite{typesOfVCS}\\
 				Version control systems usually consists of two applications, one on a server-side and one on a client-side.
 				The basic functionality of a VCS is to maintain source code, other types of software files and their history.\cite{FoundationVCforWebDevs}
@@ -421,7 +424,7 @@
 				
 					\subsubsection*{Interview format}
 					The format of the interviews will be a discussion on the topic of this paper where the aim is to get the subjects to explain their standing on the issue of CLI v. GUI in Git interaction, and most of all elaborate around perceptions and experiences that they have. We will also supply some information about the UI:s to allow the sessions to go into as much detail as possible. 
-					We conducted 3 interviews with subjects from both of the above mentioned groups and one with a user with an indicated level of knowledge to be in between the two groups. The sessions were recorded and transcribed later to minimize the loss of information that would occur if we only took notes during the interviews.\\
+					We conducted three interviews with subjects from both of the above mentioned groups and one with a user with an indicated level of knowledge to be in between the two groups. The sessions were recorded and transcribed later to minimize the loss of information that would occur if we only took notes during the interviews.\\
 					At the end we carried out a small quality analysis of the results.
 					
 					\subsubsection*{Questions and topics to discuss}
