@@ -147,8 +147,8 @@
 		To date people seem to prefer the CLI over GUI when working with Git, however it is not clear as to why.
 		Theories do exist which state that the CLI provides a faster and more controlled way of dealing with Git. \cite{GitUserSurvey}\cite{GitInClassroom}
 		\\
-		The reason this topic was thought of in the first place is due to an observation made in one of our classes. As of the day of writing there is no real formal introduction course to version control at Blekinge Institute of Technology, much less to Git. So instead there are a small number of courses where students are introduced to Git alongside the actual content of the course and most of the learning is left to what the student chooses to find out.\\
-		During one of these introduction talks about Git the students were encouraged to start out by using the command-line interface in order to get a feel for how Git works. This was met by a lot of complaining from the students as they would rather use a graphical user interface. The subsequent discussion that ensued was the spark that lit the idea to do this research.
+		The reason this topic was thought of in the first place was due to an observation made in one of our courses. As of the day of writing there is no real formal introduction course to version control at Blekinge Institute of Technology, much less to Git. Instead there are a small number of courses where students are introduced to Git alongside the actual content of the course and most of the learning is left to what the student chooses to find out.\\
+		During one of these introductory talks about Git the students were encouraged to start out by using the command-line interface in order to get a feel for how Git works. This was met by a lot of complaining from the students as they would rather use a graphical user interface. The subsequent discussion that ensued was the spark that lit the idea to do this research.
 		\\
 		In this paper we've taken a closer look into what people use today, in terms of interfaces to work with Git, and if there's any correlation to be found between how people use Git and which interface they used.
 		The aim was to find out which interface is more preferred, which is more suitable to novice users and if developers can benefit more from using either of the two interfaces when reaching a certain knowledge-level of Git.\\
@@ -164,18 +164,18 @@
 			In 2005 the Linux development community started the development of Git.
 			Up until that point they had been using BitKeeper as their version control system. By that time BitKeeper was free but when the company behind the product decided to price it the Linux development community quickly abandoned the solution to develop their own open-source version control system.\cite{ProGit}
 			To date, Github alone has over 21.7 million repositories.\cite{GithubAbout} All of these repositories are, as might be obvious, Git repositories. 
-			Git is, today, one of the most common version control systems \cite{EclipseDeveoperReport}\cite{DeveloperProductivity}\cite{MicrosoftSurveyResults}. The reason for Git being a very powerful tool is its flexibility, the core is well designed and quite ingenious and the surrounding functionality is adaptive and highly customizable. This contributes to two things, the learning curve being quite steep and a challenge to get over. But once you get over the curve you can very easily navigate the functionality and structure of a Git repository and have little difficulty learning new methods and work flows. At least this seems to be the consensus on forums and message boards around the web, and it coincides quite accurately with our experiences as well.
+			Git is, today, one of the most common version control systems \cite{EclipseDeveoperReport}\cite{DeveloperProductivity}\cite{MicrosoftSurveyResults}. The reason for Git being a very powerful tool is its flexibility, the core is well designed, quite ingenious and the surrounding functionality is adaptive and highly customizable. This contributes to two things, the learning curve being quite steep and a challenge to get over. But once you get over the curve you can very easily navigate the functionality and structure of a Git repository and have little difficulty learning new methods and work flows. This at least seems to be the consensus on forums and message boards around the web, and it coincides quite accurately with our experiences as well.
 			\\
 			The basic structure of a Git repository is; 1) a .git directory that houses the meta date and object database for your repository and all the committed changes. 2) A staging area where changes that are to be committed are kept in waiting for a commit to take place. 3) A working directory where your plain working copy of the source code is held. This is where development is done. \cite{GitStructure} 
-			So depending on what version of the code you checkout from the .git directory, it will appear in the working directory. Then you code your changes and stage them, thus placing the changes securely in the staging area. Then the final step is to commit what is in the staging are and it will get saved into the .git directory. Then some repositories have a remote host that the changes can be pushed to for ease of sharing the code. These are the very basics of how Git works \cite{GitStructure}
+			So depending on what version of the code you checkout from the .git directory, it will appear in the working directory. Then you code your changes and stage them, thus placing the changes securely in the staging area. The final step is to commit what is in the staging area and it will be saved into the .git directory. Some repositories have a remote host that the changes can be pushed to for ease of sharing the code. These are the very basics of how Git works \cite{GitStructure}
 			
 			\section{Command-line interface and the Graphical user interface}
 			There are two main ways of interfacing with Git, one is through a command-line interface and the other is through one of many graphical user interfaces that are available. \cite{GitGUIs}\\
 			
 			When using the command-line interface you type commands manually to preform the desired actions whilst in a graphical user interface you will have something visual to interact with, such as buttons, input fields and so on.
-			There's pros and cons with using either of the two interfaces not only for Git but in general.
-			For example, through a command-line you can perform some actions, like renaming 100 files with a lot less effort than with a graphical user interface but it would require you to know the commands needed to rename the files. One command can perform a lot of different tasks, whilst in a graphical user interface you would normally have to rename each file one by one which would require a lot more time but less knowledge. As mentioned in the introduction the debate of GUI v. CLI has been going on since the 80's and not a great deal has changed in the arguments, since they are so deeply ingrained in either interface. 
-			A good analogy is the car dealership comparison made in the article (Later a book) \textit{In the beginning was the command-line} (Stephens, 1999) \cite{InTheBeginning}. The summary of the analogy would be that there are a bunch of competing automotive dealerships on the same street where some are expensive, but easy to use and fairly cheep to repair however they often break down. Another sells sleek euro-style cars that no one really knows the inner workings of, they are expensive but beautiful. Then there is the super advanced tanks that are being given away for free. Yet still all the customers go for the cheap car that is sort of bad or the expensive euro-car. No one wants a tank even though they are free, because no one can be bothered to learn how to drive it. 
+			There are pros and cons with using either of the two interfaces not only for Git but in general.
+			For example, through a command-line you can rename 100 files with a lot less effort than with a graphical user interface. Though it would require you to know the commands needed to rename the files. One command can perform a lot of different tasks, whilst in a graphical user interface you would normally have to rename each file one by one which would require a lot more time but less knowledge. As mentioned in the introduction the debate of GUI v. CLI has been going on since the 80's and not a great deal has changed in the arguments, since they are so deeply ingrained in either interface. 
+			A good analogy is the car dealership comparison made in the article (Later a book) \textit{In the beginning was the command-line} (Stephens, 1999) \cite{InTheBeginning}. The summary of the analogy would be that there are a bunch of competing automotive dealerships on the same street where some are expensive, but easy to use and fairly cheap to repair however they often break down. Another sells sleek euro-style cars that no one really knows the inner workings of, they are expensive but beautiful. Then there is the super advanced tanks that are being given away for free. Yet still all the customers go for the cheap car that is sort of bad or the expensive euro-car. No one wants a tank even though they are free, because no one can be bothered to learn how to drive it. 
 			This analogy helps to illustrate the situation between the GUI and CLI very simply but quite accurately.
 			\\\\
 			"A command line interface (CLI) enables users to type commands in a terminal or console window to interact with an operating system. Users respond to a visual prompt by typing a command on a specified line, and receive a response back from the system. Users type a command or series of commands for each task they want to perform."\cite{OracleCLIAndGUI}.\\
@@ -200,10 +200,10 @@
 			
 			\section{Terminology used}
 			\begin{itemize}
-				\item Demographic - The word demographic is used in this thesis and refers to a certain group that answered our survey. The groups members are defined by their indicated level of proficiency with Git, and the amount of time they have worked with Git. The determination of which demographic a respondent falls in is made up of a point system. The alternatives are given an arbitrary point value to signify rank and when the points for the chosen alternatives are added up we get the sum for the respondent. Low is defined as 2-4, mid 5-7 and high 8-9. We did this in order to make it possible to split the respondents into demographics.
+				\item Demographic - The word demographic is used in this thesis and refers to a certain group that answered our survey. The group's members are defined by their indicated level of proficiency with Git, and the amount of experience they have with Git. The determination of which demographic a respondent falls in is made up of a point system. The alternatives are given an arbitrary point value to signify rank and when the points for the chosen alternatives are added up we get the sum for the respondent. Low is defined as 2-4, mid 5-7 and high 8-9. We did this in order to make it possible to split the respondents into demographics.
 				\item VCS - A VCS is a system that records changes to a file or a set of files over time so that you can recall specific versions later.
 				There are three different types of version control systems; Local Version Control Systems, Centralized Version Control Systems and Distributed Version Control Systems.\\
-				Since Git is a Distributed Version Control System and this thesis concerns Git - you can safely assume that we talk about the Distributed Version Control System when we say Version Control System.\cite{typesOfVCS}\\
+				Since Git is a Distributed Version Control System and this thesis concerns Git - you can safely assume that we discuss about the Distributed Version Control System when we say Version Control System.\cite{typesOfVCS}\\
 				Version control systems usually consists of two applications, one on a server-side and one on a client-side.
 				The basic functionality of a VCS is to maintain source code, other types of software files and their history.\cite{FoundationVCforWebDevs}
 				
@@ -228,18 +228,20 @@
 				\item At what stage of Git proficiency would you stand to gain the most from the CLI or the GUI? (Looking at what should you start out with to learn how Git works and how it is used, and what you will gain the most from when you get to a higher level of understanding Git.)
 			\end{enumerate}
 				\subsection{Reasoning for questions}
-				We initially identified and used the above questions as the basis for our work because they work well as guidelines towards what we wanted to find out. Firstly we had to find out which UI new Git users use and how they getting started with Git, in order to see what the reality is today. Secondly we had to look at what more experienced users employ at the moment in terms of UIs, in order to see what the trend of swapping looks like. We could do this through looking at the results from our survey and the Git survey from 2012 \cite{GitUserSurvey}. Thirdly we wanted to examine a few examples of the UIs available in order to see what could be won. However since we lacked time and the means to do a clear objective analysis of the UIs, we instead used some of the opinions and reflections about the UIs gained from the survey and the interviews to get an idea of what users have gotten out of the UIs. Fourthly we wanted to examine all the results collected while researching the other questions in order to build at least a partial answer to the fifth question, which was our overall goal with the research.\\
+				We initially identified and used the above questions as the basis for our work because they work well as guidelines towards what we wanted to find out. Firstly we had to find out which UI new Git users use and how they got started with Git, in order to see what the reality is today. Secondly we had to look at what more experienced users employ currently in terms of UIs, in order to see how the trend of swapping appear to be. This is something we could do through looking at the results from our survey and the Git survey from 2012 \cite{GitUserSurvey}. Thirdly we wanted to examine a few examples of the UIs available in order to see what could be gained, in terms of functionality and convenience. But since we lacked time and the knowledge, we couldn't do a clear objective analysis of the UIs. Instead we used some of the opinions and reflections about the UIs gained from the survey and the interviews to get an idea of what users have gain through using the UIs. 
+				Fourthly we wanted to examine all the results collected while researching the other questions in order to build at least a partial answer to the fifth question.\\
 				The reason that we thought this would be important is that there are so many different approaches to learning git and so many opinions that you have to get through before you can decide how you want to learn. These results may help shortening that period.
 			\section{Approach for answering research questions}
-			To answer the research questions a literature study was conducted to find out how Git works, Git workflows and discussions about the command-line interface and about graphical user interface in general. Based on what was found, a design of a survey and a number of questions for interviews was created.\\
-			The intention of the survey was to collect information about current users preferences and perceptions. We wanted to know what they are currently using (either CLI or GUI tool), how long they have been using it, what their perception of the two different types of interface is, how they work with Git, how they began using it and how they learned to use it. This to find correlations between their experience with and use of Git, to their preferences and reasoning behind their choice of tool.\\
-			The interviews were based on more open questions where the aim was to allow the subject to elaborate around why they have chosen to work like they do, and discuss the perks of the two different types of interfaces that we put forward. The aim of the exercise was to get a deeper understanding of the reasoning that goes into the choice, an understanding that the survey will not be able to supply.\\
+			To answer the research questions a literature study was conducted to find out how Git works, workflows and discussions about the command-line interface and about graphical user interface in general. Based on what was found, the design of the survey and a number of questions for the interviews was created.\\
+			The intention of the survey was to collect information about current users preferences and perceptions. We wanted to know what they were currently using (either CLI or GUI tool), how long they have been using it, what their perception of the two different types of interface were, how they work with Git, how they began using it and how they learnt to use it. 
+			Using this information we attempted to idenfity correlations between their experience with Git, how they use Git and their preferences and reasoning behind their choice of UI.\\
+			The interviews were based on more open questions where the aim was to allow the subject to elaborate around why they have chosen to work like they do, and discuss the perks of the two different types of interfaces that we put forward. The aim of the exercise was to get a deeper understanding of the reasoning that goes into their choices which is an understanding that the survey would not be able to supply.\\
 			Studies have been conducted to try to find out what people use when interfacing with Git, but the most recent study to cover that area, that we could find was conducted in 2012 \cite{GitUserSurvey}.
 			By conducting a survey, where we aimed to find out what people use today and why, there was the possibility to gather fresh data as the data collected back in 2012 might not accurately represent how people interface with Git today.
 			\\\\
-			In summary questions 1 and 2 was answered using the survey where questions pertaining to what UI the subject is currently using and what UI the subject started using for Git interfacing. Correlations was searched for in the 2012 GitSurvey \cite{GitUserSurvey} to see how the results compare to other studies.
-			Questions 3 and 4 was answered in part through some of the perception related questions in the survey coupled with the interviews. Finally question 5 was somewhat answered by, in part, statistics from the survey by looking at questions pertaining to perception of the UIs, time consumption associated with the subjects use of Git, both general and problem based, and the subjects varying use of and proficiency with Git. Also partly through the interviews where being able to hear what drew the subjects to the UI that they use and what they believe to be important in the choice of a UI. Since we were able to determine demographics based on the level of proficiency, from the survey. We could use those to find and interview subjects that can represent a certain demographic and discuss their needs and requirements from the user interfaces. 
-			Our belief was that, by answering questions 1 to 5, developers would get a general overview of how todays Git users interface with Git and why. The "why" didn't have to be detailed for the information to be valuable because it might be enough to know that, hypothetically, making a commit and pushing code through a graphical user interface is slower than doing the same in the command-line interface.  
+			In summary questions 1 and 2 was answered using the survey where questions pertaining to what UI the subject was currently using and what UI the subject began using for Git interfacing. Correlations was searched for in the 2012 GitSurvey \cite{GitUserSurvey} to see how the results compare to other studies.
+			Questions 3 and 4 was answered in part through some of the perception related questions in the survey coupled with the interviews. Finally question 5 was somewhat answered by, in part, statistics from the survey by looking at questions pertaining to perception of the UIs, time consumption associated with the subjects use of Git, both general and problem based, and the subjects varying use of and proficiency with Git. Also partly through the interviews where we were able to hear what drew the subjects to the UI that they use and what they believe to be important in the choice of a UI. Since we were able to determine the demographics based on the level of proficiency, from the survey we could use those to find and interview subjects which represented a certain demographic and discuss their needs and requirements from the user interfaces. 
+			Our belief was that, by answering questions one to five, developers would get a general overview about how present days Git users interface with Git and why. The "why" didn't have to be detailed for the information to be valuable because it might be enough to know that, hypothetically, making a commit and pushing code through a graphical user interface is slower than doing the same in the command-line interface.  
 		 
 			\section{Literature review design}
 			In our literature study we used BTH Summon, Engineering Village, IEEE Xplore and Google scholar as our primary search database.\\\\
@@ -880,43 +882,43 @@
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-cli.png}
-			\caption{Correlation between experience and usage of the CLI. Shows that as experience (in the analysis refered to level) increase the number of CLI users increase. Sig-value of 0.016 which shows a statistically significant correlation.}
+			\caption{Correlation between experience and usage of the CLI. Shows that as experience (in the analysis referred to level) increase the number of CLI users increase. Sig-value of 0.016 which shows a statistically significant correlation.}
 			\label{fig:Correlation between experience and usage of the CLI.}
 		\end{figure}
 		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-gui.png}
-			\caption{Correlation between experience and usage of the GUI. Shows that as experience (in the analysis refered to as level) increases the number of GUI users decreases. Sig-value of 0.128 which shows that there is no statistically significant correlation.}
+			\caption{Correlation between experience and usage of the GUI. Shows that as experience (in the analysis referred to as level) increases the number of GUI users decreases. Sig-value of 0.128 which shows that there is no statistically significant correlation.}
 			\label{fig:Correlation between experience and usage of the GUI.}
 		\end{figure}
 		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.75\textwidth]{graphs/correlation-between-knowledge-and-usage-of-both.png}
-			\caption{Correlation between experience and usage of both the CLI and GUI. Shows that as experience (in the analysis refered to as level) increases the number of users, that use both a GUI and the CLI, increases. Sig-value of 0.128 which shows that there is no statistically significant correlation.}
+			\caption{Correlation between experience and usage of both the CLI and GUI. Shows that as experience (in the analysis referred to as level) increases the number of users, that use both a GUI and the CLI, increases. Sig-value of 0.128 which shows that there is no statistically significant correlation.}
 			\label{fig:Correlation between experience and usage of both the CLI and GUI.}
 		\end{figure}
 		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\textwidth]{graphs/crosstabulation-learnt-using.png}
-			\caption{A crosstabulation showing how many that learnt Git through each of the options available in question 4, in the survey, and what interface they are using now.}
-			\label{fig:crosstabulation - what interface they are using x how they learnt Git}
+			\caption{A cross tabulation showing how many that learnt Git through each of the options available in question 4, in the survey, and what interface they are using now.}
+			\label{fig:cross tabulation - what interface they are using x how they learnt Git}
 		\end{figure}
 		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\textwidth]{graphs/crosstabulation-how-using-git-interface.png}
-			\caption{A crosstabulation showing what respondents use Git for and what interface they are using for their work.}
-			\label{fig:crosstabulation - what interface they are using x what they use Git for.}
+			\caption{A cross tabulation showing what respondents use Git for and what interface they are using for their work.}
+			\label{fig:cross tabulation - what interface they are using x what they use Git for.}
 		\end{figure}
 		
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\textwidth]{graphs/crosstabulation-os-using.png}
-			\caption{A crosstabulation showing what OS respondents use and what interface they are using.}
-			\label{fig:crosstabulation - what interface they are using x what OS they use.}
+			\caption{A cross tabulation showing what OS respondents use and what interface they are using.}
+			\label{fig:cross tabulation - what interface they are using x what OS they use.}
 		\end{figure}
 		
 		\chapter{Quality Analysis of interviews}
