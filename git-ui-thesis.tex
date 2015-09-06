@@ -152,9 +152,9 @@
 		\\
 		In this paper we've taken a closer look into what people use today, in terms of interfaces to work with Git, and if there's any correlation to be found between how people use Git and which interface they used.
 		The aim was to find out which interface is more preferred, which is more suitable to novice users and if developers can benefit more from using either of the two interfaces when reaching a certain knowledge-level of Git. Novice Git users and developers are therefore the target audience for this paper.\\
-		To find these answers we have conducted a survey, through an online service, that has been sent out to developers within the industry and students at Blekinge Institute of Technology.
+		To find these answers we have conducted a survey, through an online service (Google forms), that was sent out to developers within the industry of software manufacturing and students at Blekinge Institute of Technology. The distribution to the industry was done through in part people we know whom agreed to spread the link to co-workers and so on, and in part through online forums. \\
 		A literature study has been carried out as well, mainly to help  gather as much knowledge about current opinions within the scientific scene about the CLI and GUI interfaces.
-		The results of the literature study gave us clues about which UI we could expect to be more prefered amongst Git users and why. Thanks to those clues we could develop questions that would provide us with relevant data.\\
+		Thanks to the clues found in the literature review we could develop questions that would provide us with relevant data.\\
 		Three interviews were conducted to get a deeper understanding of the answers that were gathered through the survey.
 		We felt that a survey could possibly provide enough information to carry out the work but by conducting interviews there was a greater chance of understanding as to why the participants, of the survey, answered the way that they did.
 		
@@ -163,8 +163,8 @@
 			\section{Git}
 			In 2005 the Linux development community started the development of Git.
 			Up until that point they had been using BitKeeper as their version control system. By that time BitKeeper was free but when the company behind the product decided to price it the Linux development community quickly abandoned the solution to develop their own open-source version control system.\cite{ProGit}
-			To date, Github alone has over 21.7 million repositories.\cite{GithubAbout} All of these repositories are, as might be obvious, Git repositories. 
-			Git is, today, one of the most common version control systems \cite{EclipseDeveoperReport}\cite{DeveloperProductivity}\cite{MicrosoftSurveyResults}. The reason for Git being a very powerful tool is its flexibility, the core is well designed, quite ingenious and the surrounding functionality is adaptive and highly customizable. This contributes to two things, the learning curve being quite steep and a challenge to get over. But once you get over the curve you can very easily navigate the functionality and structure of a Git repository and have little difficulty learning new methods and work flows. This at least seems to be the consensus on forums and message boards around the web, and it coincides quite accurately with our experiences as well.
+			To date, Github alone has over 21.7 million repositories.\cite{GithubAbout} All of these repositories are different little packages of code or text that people have created and are working on, with varying levels of frequency.
+			Git is, today, one of the most common version control systems \cite{EclipseDeveoperReport}\cite{DeveloperProductivity}\cite{MicrosoftSurveyResults}. The reason for Git being a very powerful tool is its flexibility in work flow choice, the storage is well designed and consistent,\cite{WhyGit} and the surrounding functionality is adaptive and highly customizable. This contributes to two things, the learning curve being quite steep and a challenge to get over. But once you get over the curve you can very easily oversee and understand the functionality and structure of a Git repository and have little difficulty learning new methods and work flows. This at least seems to be the consensus on forums and message boards around the web, and it coincides quite accurately with our experiences as well.
 			\\
 			The basic structure of a Git repository is; 1) a .git directory that houses the meta date and object database for your repository and all the committed changes. 2) A staging area where changes that are to be committed are kept in waiting for a commit to take place. 3) A working directory where your plain working copy of the source code is held. This is where development is done. \cite{GitStructure} 
 			So depending on what version of the code you checkout from the .git directory, it will appear in the working directory. Then you code your changes and stage them, thus placing the changes securely in the staging area. The final step is to commit what is in the staging area and it will be saved into the .git directory. Some repositories have a remote host that the changes can be pushed to for ease of sharing the code. These are the very basics of how Git works \cite{GitStructure}
@@ -399,7 +399,7 @@
 					\end{enumerate}
 				
 					\subsubsection*{Crafting and distribution}
-					The survey was made as a web form that we can easily collect the data from and most of all distribute easily. Distribution of the survey was done through a number of different channels such as BTH:s student mail list, contacts at different Swedish companies and finally 8 different sub-reddits (Forum boards at the popular web forum Reddit) associated with software development. These gave a very large portion of the replies to the survey as a few of the sub-reddits that we managed to find were specifically for Git users. This generated some very fortunate feedback and interest from that community.
+					The survey was made as a web form that we can easily collect the data from and most of all distribute easily. Distribution of the survey was done through a number of different channels such as BTH:s student mail list, friends working with software development in Sweden whom spread the survey as well and finally 8 different sub-reddits (Forum boards at the popular web forum Reddit) associated with software development (Look in the acknowledgements for the exact names of the sub-reddits). These gave a very large portion of the replies to the survey as a few of the sub-reddits that we managed to find were specifically for Git users. This generated some very fortunate feedback and interest from that community.
 					To get as many responses as possible the survey was designed to be easy and quick to fill out and to motivate participants even further we had a prize drawn amongst the participants for three, one month gift subscriptions to the curio service Loot Crate. \cite{lootcrate} 
 				
 					\subsubsection*{Analysis of survey}
@@ -749,6 +749,10 @@
 			
 			\bibitem{SPSS}
 			IBM SPSS Statistics. Available: \url{http://www-01.ibm.com/software/analytics/spss/products/statistics/} [Accessed 10th August 2015].
+			\bibitem{WhyGit}
+			Giancarlo Lionetti. (2012). Git vs Mercurial: Why Git?.
+			Available: \url{http://blogs.atlassian.com/2012/03/git-vs-mercurial-why-git/}.
+			Last accessed 6th September 2015.
 			
 		\end{thebibliography}
 		
