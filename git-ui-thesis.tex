@@ -247,15 +247,18 @@
 			In our literature study we used BTH Summon, Engineering Village, IEEE Xplore and Google scholar as our primary search database.\\\\
 			\textbf{Keywords used:} Git, configuration control, version control, public domain software, software engineering, linux, UI, User interface, Graphical user interface, GUI, CLI, Command line interface, Case study, User experience, Usability, UX, Interface.
 			\\\\
-			To sort out what literature that was relevant we had to read the abstracts.
+			Our goal was to find literature where the authors examined the CLI, a GUI, or performed experiments with either or both the UIs. Papers that include this type of content is considered, by us, relevant to us.
+			The age of the content did not matter to us, because we were interested in finding out how people's views of the CLI and GUI have changed throughout the years.
+			To sort out what literature that was relevant we read the abstracts.
 			Whenever we found a literature that had a relevant abstract we would then proceed to add it to a stack with literature that we believed to be relevant to our work.
-			After getting roughly 10 papers we started snowballing in hope of finding more relevant papers.
+			We initially performed one round of snowballing, through that round we found roughly 10 papers that we believed to be relevant. We did attempt a second round of snowballing, but unfortunately we didn't find any new and relevant literature, so we decided to conclude our search for literature by then.
+			
 			
 			\section{Empirical study design}
 			
 				\subsection{Survey}
 					\subsubsection*{Goal with the survey}
-					The survey consisted of 13 multiple choice questions, the questions were aimed to be as easy and quick to answer as possible in order to persuade people to answer the survey. What the survey was aimed at finding out the following: 
+					The survey consisted of 13 multiple choice questions, the questions were aimed to be as easy and quick to answer as possible in order to persuade people to answer the survey. The survey was aimed at finding out the following: 
 					
 					\begin{itemize}
 						\item Find out what level of experience the subject has with Git.
@@ -445,10 +448,14 @@
 		
 		% Literature study		
 		\chapter{Literature review}
-		
+
 			\section{Command-line versus Graphical user interface}
+			Our search for literature didn't yield as much results as we had hoped for, there weren't a whole lot of papers that mentioned Git in combination with UIs. It might be because the area is very specific.
+			But the information we managed to collect through this study was definitely valueable to us.
+			
 			Based on what we found people with experience about Git will in most, if not all cases prefer the command-line interface over a graphical user interface.\\
-			The reason behind this is however, not crystal clear. In the 2012 edition of GitSurvey \cite{GitUserSurvey}, about 97\% of the people who answered the question “What Git implementations do you use?”, use the Git command-line whilst only 8\% use some graphical user interface.\\\\
+			The reason behind this is however, not crystal clear. In the 2012 edition of GitSurvey \cite{GitUserSurvey}, about 97\% of the people who answered the question “What Git implementations do you use?”, use the Git command-line whilst only 8\% use some graphical user interface.
+			
 			If we go back to a time, before Git. A time when the concept of graphical user interfaces were quite new, there was a study conducted on students to see whether they would prefer the command-line interface over a graphical user interface. The study was done at Waikato University, New Zealand, back in 1992 and involved a mix of Macintoshes and IBM PC compatibles \cite{Treweek}.\\
 			A group of students were placed in front of these machines so that the staff were able to observe how they responded to interacting towards Macintoshes graphical interface and IBM PC compatibles command-line.\\
 			The theory was that the students, whom had no prior computer experience, would prefer the Macintosh because of the fact that a graphical user interface has a less harsh learning curve than a command-line.This theory was backed up by Morgan, et al \cite{MouseToRat} and Kirkpatrick et al \cite{MacVsWindows}.\\
@@ -594,7 +601,7 @@
 				The same does not apply to the usage of the GUI, because as we can see in Appendix B Figure B.2 there's a strong negative correlation which can be interpreted as the more experience the respondents have the less likely they are to use solely a GUI when interfacing with Git. In fact, none of the highly experienced respondents use a GUI solely (Figure 5.2c).
 				\\
 				Looking at the cross tabulations we can see that a graphical user interface is more used amongst respondents which learned Git through a friend/colleague or in a course rather than through an open source community, book, online tutorials or by yourself (Appendix B, Figure B.4).\\
-				In collaborative work it's more common to use a graphical user interface than working with large scale version control with branch management and code review through Git. About 30\% use a GUI for basic change tracking and collaborative work, whilst only 10\% use it for large scale version control with branch management and code review.\\
+				In collaborative work it's more common to use a graphical user interface than working with large scale version control with branch management and code review through Git, as can be seen in Appendix B Figure B.5. About 30\% use a GUI for basic change tracking and collaborative work, whilst only 10\% use it for large scale version control with branch management and code review (Appendix B, Figure B.5).\\
 				As mentioned earlier, the GUI is used quite often in combination with the CLI, at least when working with large scale version control with branch management and code review.\\
 				Another interesting thing, shown in Figure B.6 in Appendix B, is that the type of OS does seem to matter in terms of how many that use the CLI/GUI or both.\\
 				In Windows roughly 32\% use a GUI whilst in Mac the number is down to 15,5\% and in Linux 1,5\%.
